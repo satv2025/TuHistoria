@@ -83,13 +83,15 @@ nav li:hover .dropdown-content {
 
 .genre-btn {
     background: #181818;
-    padding: 25px 45px;
+    padding: 25px 0px;
     border-radius: 12px;
     text-decoration: none;
     color: #810000;
     outline: 2px solid #810000;
     font-size: 18px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+    width: 12em;
+    text-align: center;
 }
 
 .genre-btn:hover {
