@@ -1,0 +1,160 @@
+@import url("https://fuentes.solargentinotv.com.ar/netflixsans.css");
+
+* {
+    font-family: 'Netflix Sans';
+}
+
+/* ====== BODY ====== */
+body {
+    margin: 0;
+    background: #010101;
+    color: #000;
+}
+
+/* ====== HEADER ====== */
+header {
+    background: #010101;
+    border-bottom: 2px solid #810000;
+    padding: 15px;
+    text-align: center;
+    color: #810000;
+}
+
+/* ====== DESTACADAS ====== */
+.destacadas {
+    padding: 40px 20px;
+    background: #010101;
+}
+
+.destacadas h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+/* Contenedor cards para margen lateral */
+.cards-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+
+/* GRID DE CARDS */
+.cards,
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 25px;
+}
+
+.cards-grid {
+    margin: 0 50px;
+}
+
+#boldis {
+    color: #fff
+}
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    position: relative;
+}
+
+.card img {
+    width: 110%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.card-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 45px;
+}
+
+.card h3 {
+    margin: 0 0 10px;
+    font-size: 24px;
+    color: #000;
+}
+
+.card p {
+    flex: 1;
+    font-size: 16px;
+    color: #000;
+    margin: 0 0 10px;
+    font-weight: 300;
+}
+
+/* TAG DESTACADO */
+.tag-prox {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: crimson;
+    color: #fff;
+    font-weight: bold;
+    padding: 6px 12px;
+    font-size: 13px;
+    border-radius: 6px;
+}
+
+/* FORMULARIO PUBLICAR */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+form label {
+    font-weight: 700;
+}
+
+form input,
+form select,
+form textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #810000;
+    background: #181818;
+    color: #000;
+    font-size: 14px;
+    outline: none;
+    resize: vertical;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    border-color: #f00;
+}
+
+/* CONTACTO */
+.contact-info {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.contact-info p,
+.contact-info a {
+    color: #000;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    color: #810000;
+}
+
+p {
+    line-height: 1.6;
+    text-align: justify;
+}
