@@ -4,12 +4,5 @@
             "source": "/(.*).html",
             "destination": "/$1"
         }
-    ],
-    "routes": [
-        {
-            "src": "/.*",
-            "status": 404,
-            "dest": "/404.html"
-        }
     ]
 }
