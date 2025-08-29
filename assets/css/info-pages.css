@@ -92,6 +92,14 @@ header {
     font-weight: 300;
 }
 
+li {
+    font-weight: 300;
+}
+
+strong {
+    font-weight: 500;
+}
+
 /* TAG DESTACADO */
 .tag-prox {
     position: absolute;
