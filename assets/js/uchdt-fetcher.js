@@ -12,12 +12,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
             let text = await response.text();
 
-            // 🚀 Reemplazos según prefijos
+            // 🚀 Formateo por bloques
             text = text
-                .replace(/\{formatear-titulo\}(.*?)(\r?\n|$)/g, "<h3 style='text-align: center'>$1</h3>")
-                .replace(/\{formatear-subtitulo\}(.*?)(\r?\n|$)/g, "<p id='subtitulo-uchdt' style='font-weight: 500'>$1</p>")
-                .replace(/\{formatear-texto\}(.*?)(\r?\n|$)/g, "<p>$1</p>")
-                .replace(/\{formatear-pie\}(.*?)(\r?\n|$)/g, "<p style='font-style: italic; color:#555'>$1</p>");
+                .replace(/\{formatear-titulo\}([\s\S]*?)(?=\n\{formatear-|$)/g, "<h3 style='text-align: center'>$1</h3>")
+                .replace(/\{formatear-subtitulo\}([\s\S]*?)(?=\n\{formatear-|$)/g, "<p id='subtitulo-uchdt' style='font-weight: 500'>$1</p>")
+                .replace(/\{formatear-texto\}([\s\S]*?)(?=\n\{formatear-|$)/g, "<p>$1</p>")
+                .replace(/\{formatear-pie\}([\s\S]*?)(?=\n\{formatear-|$)/g, "<p style='font-style: italic; color:#555'>$1</p>");
 
             container.innerHTML = text;
         } catch (err) {
