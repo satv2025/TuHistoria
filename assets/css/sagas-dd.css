@@ -2,6 +2,9 @@
     position: relative;
     display: inline-block;
     font-weight: 700;
+    margin-left: 39em;
+    margin-top: 1em;
+    z-index: 1000;
 }
 
 /* Botón principal como div */
@@ -14,13 +17,22 @@
     cursor: pointer;
     position: relative;
     transition: all 0.3s;
+    width: 7.5em;
+    height: 1.3em;
 }
 
 #season-btn::after {
     content: "▼";
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 108px;
     transition: transform 0.3s;
+    font-size: 25px;
+    /* tamaño de la flecha */
+    line-height: 0;
+    /* evita que afecte la altura del botón */
+    vertical-align: middle;
+    /* centra verticalmente respecto al texto */
+    margin-top: -1.7em;
 }
 
 .dropdown-temporadas.active #season-btn::after {
@@ -40,6 +52,9 @@
     z-index: 10;
     flex-direction: column;
     margin-top: 5px;
+    color: #f00;
+    text-align: center;
+    font-weight: 300;
 }
 
 .season-option {
