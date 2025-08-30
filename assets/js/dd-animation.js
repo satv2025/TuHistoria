@@ -4,25 +4,24 @@ const optionsContainer = dropdown.querySelector('.season-options');
 const options = dropdown.querySelectorAll('.season-option');
 
 function openDropdown() {
-    // Primero animamos border-radius
-    btn.style.borderBottomLeftRadius = '0';
-    btn.style.borderBottomRightRadius = '0';
+    // 1️⃣ Cambiar border-radius primero
+    dropdown.classList.add('preparing');
 
-    // Luego, después de 100ms, deslizamos
     setTimeout(() => {
+        // 2️⃣ Abrir el dropdown con slide
         dropdown.classList.add('active');
-    }, 100);
+        dropdown.classList.remove('preparing');
+    }, 100); // delay de 0.1s para que se vea el cambio
 }
 
 function closeDropdown() {
-    // Deslizamos hacia arriba
     dropdown.classList.remove('active');
 
-    // Restauramos border-radius después de que termine la animación
+    // Restaurar border-radius después de cerrar
     setTimeout(() => {
         btn.style.borderBottomLeftRadius = '0.2em';
         btn.style.borderBottomRightRadius = '0.2em';
-    }, 400); // coincide con duration del slide
+    }, 400); // coincide con duración del slide
 }
 
 // Click en el botón
@@ -42,11 +41,11 @@ options.forEach(option => {
         const seasonNum = option.getAttribute('data-season');
         btn.textContent = `Temporada ${seasonNum}`;
         closeDropdown();
-        loadSeason(seasonNum); // función que carga tu txt
+        loadSeason(seasonNum); // tu función para cargar txt
     });
 });
 
-// Cerrar al click fuera
+// Click fuera para cerrar
 document.addEventListener('click', () => {
     if (dropdown.classList.contains('active')) {
         closeDropdown();
