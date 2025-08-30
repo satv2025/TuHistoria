@@ -3,49 +3,53 @@ const btn = document.getElementById('season-btn');
 const optionsContainer = dropdown.querySelector('.season-options');
 const options = dropdown.querySelectorAll('.season-option');
 
-// Funciones de apertura y cierre
+let isOpen = false;
+
 function openDropdown() {
+    // 1️⃣ Cambiar border-radius primero
     btn.style.borderBottomLeftRadius = '0';
     btn.style.borderBottomRightRadius = '0';
-    optionsContainer.getBoundingClientRect(); // reflow
-    optionsContainer.style.transform = 'scaleY(1)';
+
+    // 2️⃣ Esperar un instante antes de deslizar
+    setTimeout(() => {
+        optionsContainer.style.maxHeight = optionsContainer.scrollHeight + 'px'; // slide down
+        dropdown.classList.add('active');
+        isOpen = true;
+    }, 50);
 }
 
 function closeDropdown() {
-    optionsContainer.style.transform = 'scaleY(0)';
+    optionsContainer.style.maxHeight = '0'; // slide up
+
+    // Restaurar border-radius después del slide
     setTimeout(() => {
         btn.style.borderBottomLeftRadius = '8px';
         btn.style.borderBottomRightRadius = '8px';
-    }, 300);
+        dropdown.classList.remove('active');
+        isOpen = false;
+    }, 400); // igual a duración del slide
 }
 
 // Click en botón principal
 btn.addEventListener('click', (e) => {
     e.stopPropagation();
-    if (dropdown.classList.contains('active')) {
-        dropdown.classList.remove('active');
+    if (isOpen) {
         closeDropdown();
     } else {
-        dropdown.classList.add('active');
         openDropdown();
     }
 });
 
-// Click en cada opción
+// Click en opción
 options.forEach(option => {
     option.addEventListener('click', (e) => {
         e.stopPropagation();
-        // Si querés, actualizar texto del botón:
         btn.textContent = option.textContent;
-        dropdown.classList.remove('active');
         closeDropdown();
     });
 });
 
-// Click fuera para cerrar
+// Click fuera
 document.addEventListener('click', () => {
-    if (dropdown.classList.contains('active')) {
-        dropdown.classList.remove('active');
-        closeDropdown();
-    }
+    if (isOpen) closeDropdown();
 });
