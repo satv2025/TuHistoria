@@ -49,11 +49,14 @@
 
             <!-- Selector de temporada -->
             <div class="dropdown-temporadas">
-                <button onclick="loadSeason(1)">Temporada 1</button>
-                <button onclick="loadSeason(2)">Temporada 2</button>
-                <button onclick="loadSeason(3)">Temporada 3</button>
-                <button onclick="loadSeason(4)">Temporada 4</button>
-                <button onclick="loadSeason(5)">Temporada 5</button>
+                <button id="season-btn">Temporada 1</button>
+                <div class="season-options">
+                    <button data-season="1">Temporada 1</button>
+                    <button data-season="2">Temporada 2</button>
+                    <button data-season="3">Temporada 3</button>
+                    <button data-season="4">Temporada 4</button>
+                    <button data-season="5">Temporada 5</button>
+                </div>
             </div>
 
             <div class="cards-container">
