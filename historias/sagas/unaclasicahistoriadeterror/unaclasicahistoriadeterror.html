@@ -4,10 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Free Fire: El Jugador Maldito - TuHistoria</title>
+    <title>Una Clásica Historia De Terror - TuHistoria</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="../../assets/css/info-pages.css">
     <link rel="stylesheet" href="../../assets/css/genres-dd.css">
 
+    <!-- Favicons -->
     <link rel="icon" type="image/x-icon" href="../../assets/media/favicons/favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="../../assets/media/favicons/generated/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../../assets/media/favicons/generated/favicon-32x32.png">
@@ -15,6 +18,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="../../assets/media/favicons/generated/favicon-180x180.png">
     <link rel="manifest" href="../../assets/media/favicons/generated/manifest.json">
 
+    <!-- Theme -->
     <meta name="theme-color" content="#f00">
 </head>
 
@@ -42,40 +46,29 @@
 
     <main>
         <section class="destacadas">
-            <h2 id="boldis">🎮 Free Fire: El Jugador Maldito</h2>
+            <h2 id="boldis">🌟 Una Clásica Historia De Terror</h2>
+
+            <!-- Selector de temporada -->
+            <div class="dropdown-temporadas">
+                <button onclick="loadSeason(1)">Temporada 1</button>
+                <button onclick="loadSeason(2)">Temporada 2</button>
+                <button onclick="loadSeason(3)">Temporada 3</button>
+                <button onclick="loadSeason(4)">Temporada 4</button>
+                <button onclick="loadSeason(5)">Temporada 5</button>
+            </div>
+
             <div class="cards-container">
                 <div class="card">
-                    <div class="card-content">
-                        <p><strong>Escrita por:</strong> SKB</p>
-                        <p>Un jugador recibe una solicitud de un misterioso usuario y descubre que su vida está en
-                            peligro tras aceptar jugar con él.</p>
-                        <p><strong>Géneros:</strong> Suspense, Videojuegos, Crimen</p>
-                        <p><strong>Este título es:</strong> Intenso, Emocionante, Adictivo</p>
-                        <hr>
-                        <p>Maldita sea la vida de ese usuario que me trajo aquí.</p>
-
-                        <p>Era un día normal como cualquier otro. Yo jugaba Free Fire en mi celular y ya me aburría
-                            jugar solo,
-                            hasta que me llega una solicitud de un jugador llamado <strong>saíd10neriromasaV</strong>.
-                            Inocentemente acepté y jugamos 20 partidas.
-                            Al leer el nombre entendí que decía “Vas a morir en 10 días”. Luego me dijo: “MORIRÁS EN 10
-                            DÍAS, NO INTENTES HACER NADA”.
-                            Mis padres entraron y notaron un moretón en mi pierna con la inscripción “MORIRÁS EN 10
-                            DÍAS”.
-                            Desde entonces, tengo pesadillas con ese usuario y terminé en un hospital psiquiátrico.</p>
-
-                        <p>Si me creen o no, me da igual. Lo que quiero que entiendan es que nunca jueguen Free Fire a
-                            la madrugada
-                            si no quieren pasar por lo que me pasó.</p>
-
-                        <p>Y si lo hacen, nunca, pero nunca, acepten la solicitud de <strong>saíd10neriromasaV</strong>.
-                        </p>
+                    <div class="card-content" id="historia">
+                        <!-- Aquí se cargará la temporada -->
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <script src="../../assets/js/body-main-pjc.js"></script>
+
+    <script src="../../../assets/js/body-main-pjc.js"></script>
+    <script srf="../../../assets/js/uchdt-fetcher.js"></script>
 </body>
 
 </html>
