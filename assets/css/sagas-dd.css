@@ -11,11 +11,11 @@
     color: #810000;
     border: 2px solid #810000;
     border-radius: 8px;
-    /* inicial completo */
+    /* inicialmente completo */
     padding: 10px 20px;
     cursor: pointer;
     position: relative;
-    transition: background 0.3s, color 0.3s, border-radius 0.2s;
+    transition: background 0.3s, color 0.3s, border-radius 0.3s;
     width: 7.5em;
     height: 1.3em;
     z-index: 1000;
@@ -68,14 +68,10 @@
 
     /* slide-in inicial cerrado */
     max-height: 0;
-    transition: max-height 0.4s ease;
+    transition: max-height 0.4s ease, padding 0.3s ease;
+    padding: 0;
+    /* inicialmente sin padding */
     z-index: 999;
-}
-
-/* Mostrar opciones al abrir */
-.dropdown-temporadas.active .season-options {
-    max-height: 500px;
-    /* suficiente para todas las opciones */
 }
 
 /* Opciones individuales */
@@ -88,12 +84,4 @@
 .season-option:hover {
     background: #810000;
     color: #181818;
-}
-
-.season-options {
-    overflow: hidden;
-    /* necesario para el slide */
-    max-height: 0;
-    /* inicialmente cerrado */
-    transition: max-height 0.3s ease;
 }

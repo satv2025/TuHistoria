@@ -2,30 +2,33 @@ const dropdown = document.querySelector('.dropdown-temporadas');
 const btn = document.getElementById('season-btn');
 const options = dropdown.querySelector('.season-options');
 
-// Función para abrir con slide y border-radius previo
+// Abrir dropdown con slide y borde previo
 function openDropdown() {
-    // 1️⃣ Cambiar border-radius primero
+    // 1️⃣ Ajustar border-radius
     btn.style.borderBottomLeftRadius = '0';
     btn.style.borderBottomRightRadius = '0';
 
-    // 2️⃣ Esperar un instante antes de deslizar
-    setTimeout(() => {
-        options.style.maxHeight = options.scrollHeight + 'px'; // desliza hacia abajo
-    }, 200); // 0.2s de delay
+    // 2️⃣ Forzar reflow antes del slide
+    options.getBoundingClientRect();
+
+    // 3️⃣ Slide hacia abajo
+    options.style.maxHeight = options.scrollHeight + 'px';
+    options.style.padding = '5px 0';
 }
 
-// Función para cerrar con slide
+// Cerrar dropdown con slide
 function closeDropdown() {
-    options.style.maxHeight = '0'; // desliza hacia arriba
+    options.style.maxHeight = '0';
+    options.style.padding = '0';
 
-    // Restaurar border-radius después de cerrar
+    // Restaurar border-radius después del slide
     setTimeout(() => {
         btn.style.borderBottomLeftRadius = '8px';
         btn.style.borderBottomRightRadius = '8px';
-    }, 300); // coincide con la duración del slide
+    }, 400); // coincide con transition de CSS
 }
 
-// Inicialización
+// Toggle al hacer click en el botón
 btn.addEventListener('click', (e) => {
     e.stopPropagation();
     if (dropdown.classList.contains('active')) {
@@ -37,7 +40,7 @@ btn.addEventListener('click', (e) => {
     }
 });
 
-// Cerrar al hacer click fuera
+// Cerrar al click fuera
 document.addEventListener('click', () => {
     if (dropdown.classList.contains('active')) {
         dropdown.classList.remove('active');
