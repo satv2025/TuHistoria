@@ -97,6 +97,11 @@ header {
     font-weight: 300;
 }
 
+p#subtitulo-uchdt {
+    margin-top: 1.1em;
+    margin-bottom: -0.2em;
+}
+
 li {
     font-weight: 300;
 }
