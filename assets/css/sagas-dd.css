@@ -1,12 +1,8 @@
 .dropdown-temporadas {
     position: absolute;
     font-weight: 700;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    top: 1.2em;
-    max-width: 90%;
+    margin-left: 42em;
+    margin-top: 1.2em;
 }
 
 /* Botón principal */
@@ -15,16 +11,16 @@
     color: #810000;
     border: 2px solid #810000;
     border-radius: 0.2em;
+    /* completo inicialmente */
     padding: 10px 20px;
     cursor: pointer;
     position: relative;
     transition: all 0.3s;
     width: 7.5em;
-    height: auto;
-    text-align: center;
+    height: 1.3em;
 }
 
-/* Cuando el dropdown está activo */
+/* Cuando el dropdown está activo, solo top-left y top-right */
 .dropdown-temporadas.active #season-btn {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
@@ -38,7 +34,7 @@
     top: 50%;
     transform: translateY(-50%);
     transition: transform 0.3s;
-    font-size: 18px;
+    font-size: 25px;
 }
 
 .dropdown-temporadas.active #season-btn::after {
@@ -53,16 +49,18 @@
     background: #181818;
     border: 2px solid #810000;
     border-top: none;
+    /* no doble borde con el botón */
     border-bottom-left-radius: 0.2em;
     border-bottom-right-radius: 0.2em;
-    min-width: 120px;
+    min-width: 160px;
     color: #f00;
     text-align: center;
     font-weight: 300;
+
+    /* Efecto slide */
     transform: scaleY(0);
     transform-origin: top;
     transition: transform 0.3s ease;
-    z-index: 10;
 }
 
 /* Mostrar opciones al abrir */
@@ -80,41 +78,4 @@
 .season-option:hover {
     background: #810000;
     color: #181818;
-}
-
-/* ====== MEDIA QUERIES ====== */
-@media (max-width: 1024px) {
-    .dropdown-temporadas {
-        margin-left: 0;
-        max-width: 80%;
-    }
-
-    #season-btn {
-        width: 6em;
-        padding: 8px 15px;
-    }
-
-    #season-btn::after {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 768px) {
-    .dropdown-temporadas {
-        top: 2em;
-        left: 50%;
-        transform: translateX(-50%);
-        max-width: 90%;
-    }
-
-    #season-btn {
-        width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    .season-options {
-        min-width: 100%;
-        font-size: 14px;
-    }
 }
