@@ -89,3 +89,11 @@
     background: #810000;
     color: #181818;
 }
+
+.season-options {
+    overflow: hidden;
+    /* necesario para el slide */
+    max-height: 0;
+    /* inicialmente cerrado */
+    transition: max-height 0.3s ease;
+}
