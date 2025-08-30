@@ -1,17 +1,18 @@
 const dropdown = document.querySelector('.dropdown-temporadas');
 const btn = document.getElementById('season-btn');
-const optionsContainer = dropdown.querySelector('.season-options');
 const options = dropdown.querySelectorAll('.season-option');
 
 function openDropdown() {
-    // 1️⃣ Cambiar border-radius primero
-    dropdown.classList.add('preparing');
+    // 1️⃣ Ajustar border-radius primero
+    btn.style.borderBottomLeftRadius = '0';
+    btn.style.borderBottomRightRadius = '0';
+    btn.style.color = '#181818';
+    btn.style.background = '#f00';
 
+    // 2️⃣ Abrir dropdown con pequeño delay
     setTimeout(() => {
-        // 2️⃣ Abrir el dropdown con slide
         dropdown.classList.add('active');
-        dropdown.classList.remove('preparing');
-    }, 100); // delay de 0.1s para que se vea el cambio
+    }, 50); // 50ms es suficiente para ver el cambio de border-radius
 }
 
 function closeDropdown() {
@@ -21,10 +22,12 @@ function closeDropdown() {
     setTimeout(() => {
         btn.style.borderBottomLeftRadius = '0.2em';
         btn.style.borderBottomRightRadius = '0.2em';
-    }, 400); // coincide con duración del slide
+        btn.style.color = '#810000';
+        btn.style.background = '#181818';
+    }, 400); // coincide con la duración del slide
 }
 
-// Click en el botón
+// Click en botón
 btn.addEventListener('click', (e) => {
     e.stopPropagation();
     if (dropdown.classList.contains('active')) {
@@ -41,11 +44,11 @@ options.forEach(option => {
         const seasonNum = option.getAttribute('data-season');
         btn.textContent = `Temporada ${seasonNum}`;
         closeDropdown();
-        loadSeason(seasonNum); // tu función para cargar txt
+        // loadSeason(seasonNum); // llamar tu función de fetch si corresponde
     });
 });
 
-// Click fuera para cerrar
+// Cerrar al hacer click fuera
 document.addEventListener('click', () => {
     if (dropdown.classList.contains('active')) {
         closeDropdown();
