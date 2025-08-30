@@ -14,13 +14,13 @@
     padding: 10px 20px;
     cursor: pointer;
     position: relative;
-    transition: background 0.3s, color 0.3s, border-radius 0.2s;
     width: 7.5em;
     height: 1.3em;
     z-index: 1000;
+    transition: background 0.3s, color 0.3s, border-radius 0.2s;
 }
 
-/* Flecha */
+/* Flecha del botón */
 #season-btn::after {
     content: "▼";
     position: absolute;
@@ -48,14 +48,14 @@
     transform: translateY(-50%) rotate(180deg);
 }
 
-/* Contenedor de opciones */
+/* Contenedor de opciones: siempre visible, desplazado arriba inicialmente */
 .season-options {
     position: absolute;
-    top: 100%;
+    top: calc(100% + 2px);
+    /* debajo del botón */
     left: 0;
     background: #181818;
-    /* Inicialmente sin borde para evitar el borde inferior visible */
-    border: 2px solid transparent;
+    border: 2px solid #810000;
     border-top: none;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
@@ -63,20 +63,18 @@
     color: #f00;
     text-align: center;
     font-weight: 300;
-    overflow: hidden;
-
-    max-height: 0;
-    transition: max-height 0.4s ease, border 0.2s ease;
     z-index: 999;
+
+    /* Slide real */
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
 /* Mostrar opciones al abrir */
 .dropdown-temporadas.active .season-options {
-    max-height: 500px;
-    /* suficiente para todas las opciones */
-    border: 2px solid #810000;
-    /* agrega borde al desplegar */
-    border-top: none;
+    transform: translateY(0);
+    opacity: 1;
 }
 
 /* Opciones individuales */

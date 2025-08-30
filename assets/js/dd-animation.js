@@ -3,55 +3,52 @@ const btn = document.getElementById('season-btn');
 const optionsContainer = dropdown.querySelector('.season-options');
 const options = dropdown.querySelectorAll('.season-option');
 
-let isOpen = false;
-
 function openDropdown() {
-    // Cambiar border-radius primero
+    // Primero animamos border-radius
     btn.style.borderBottomLeftRadius = '0';
     btn.style.borderBottomRightRadius = '0';
 
-    // Espera pequeña para que el borde se aplique
+    // Luego, después de 100ms, deslizamos
     setTimeout(() => {
-        optionsContainer.style.borderColor = '#810000'; // activa borde inferior
-        optionsContainer.style.maxHeight = optionsContainer.scrollHeight + 'px'; // slide-down real
         dropdown.classList.add('active');
-        isOpen = true;
-    }, 50);
+    }, 100);
 }
 
 function closeDropdown() {
-    optionsContainer.style.maxHeight = '0'; // slide-up real
-    optionsContainer.style.borderColor = 'transparent'; // quita borde inferior
+    // Deslizamos hacia arriba
+    dropdown.classList.remove('active');
 
-    // Restaurar border-radius después del slide
+    // Restauramos border-radius después de que termine la animación
     setTimeout(() => {
         btn.style.borderBottomLeftRadius = '8px';
         btn.style.borderBottomRightRadius = '8px';
-        dropdown.classList.remove('active');
-        isOpen = false;
-    }, 400); // coincide con duración del slide
+    }, 400); // coincide con duration del slide
 }
 
-// Click en botón
+// Click en el botón
 btn.addEventListener('click', (e) => {
     e.stopPropagation();
-    if (isOpen) {
+    if (dropdown.classList.contains('active')) {
         closeDropdown();
     } else {
         openDropdown();
     }
 });
 
-// Click en opción
+// Click en opciones
 options.forEach(option => {
     option.addEventListener('click', (e) => {
         e.stopPropagation();
-        btn.textContent = option.textContent;
+        const seasonNum = option.getAttribute('data-season');
+        btn.textContent = `Temporada ${seasonNum}`;
         closeDropdown();
+        loadSeason(seasonNum); // función que carga tu txt
     });
 });
 
-// Click fuera
+// Cerrar al click fuera
 document.addEventListener('click', () => {
-    if (isOpen) closeDropdown();
+    if (dropdown.classList.contains('active')) {
+        closeDropdown();
+    }
 });
