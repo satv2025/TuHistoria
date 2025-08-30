@@ -1,5 +1,3 @@
-{formatear-titulo}  TEMPORADA 2
-
 {formatear-titulo} UNA CLÁSICA HISTORIA DE TERROR 2
 {formatear-titulo} LA SECUELA
 
