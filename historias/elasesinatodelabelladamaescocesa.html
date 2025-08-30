@@ -14,136 +14,98 @@
     <link rel="icon" type="image/png" sizes="48x48" href="../../assets/media/favicons/generated/favicon-48x48.png">
     <link rel="apple-touch-icon" sizes="180x180" href="../../assets/media/favicons/generated/favicon-180x180.png">
     <link rel="manifest" href="../../assets/media/favicons/generated/manifest.json">
-
 </head>
 
 <body>
     <header>
-        <h1>Historias</h1>
+        <nav>
+            <ul>
+                <li><a href="/" class="active">INICIO</a></li>
+                <li><a href="/nosotros">NOSOTROS</a></li>
+                <li><a href="/contacto">CONTACTO</a></li>
+                <li><a href="/publicar">PUBLICAR</a></li>
+                <li id="generos-btn">
+                    <a>GÉNEROS</a>
+                    <div class="dropdown-content">
+                        <a href="/generos/terror">Terror</a>
+                        <a href="/generos/creepypastas">Creepypastas</a>
+                        <a href="/generos/suspenso">Suspenso</a>
+                        <a href="/generos/novelas">Novelas</a>
+                        <a href="/generos/cuentos">Cuentos</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <section class="card">
-            <div class="card-content">
-                <h2>El Asesinato de la Bella Dama Escocesa</h2>
-                <p><strong>Escrita por:</strong> SKB</p>
+        <section class="destacadas">
+            <h2 id="boldis">El Asesinato de la Bella Dama Escocesa</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-content">
+                        <p><strong>Escrita por:</strong> SKB</p>
 
-                <h3>Mini Sinopsis</h3>
-                <p>Hola, me llamo Juan Tael Gómez y soy un detective de California, pero pueden llamarme “El Detective
-                    Tael”. Hoy les voy a contar el curioso y sospechoso caso de la desaparición y asesinato de Ana María
-                    Manor, la bella dama escocesa coronada ese mismo día ocurrido en Aberdeen.</p>
+                        <h3>Mini Sinopsis</h3>
+                        <p>Hola, me llamo Juan Tael Gómez y soy un detective de California, pero pueden llamarme “El
+                            Detective Tael”.
+                            Hoy les contaré el curioso caso de la desaparición y asesinato de Ana María Manor, la bella
+                            dama escocesa coronada
+                            ese día en Aberdeen.</p>
 
-                <h3>Sinopsis</h3>
-                <p>En un castillo de Aberdeen, la familia Manor sufre el secuestro y asesinato de “La Bella Dama
-                    Escocesa” Ana María Manor. Ana Isabelle se contacta con el detective “Juan Tael Gómez” para que
-                    investigue el caso.</p>
-                <p>La trama toma un giro inesperado y se convierte en una novela muy sádica.</p>
+                        <h3>Sinopsis</h3>
+                        <p>En un castillo de Aberdeen, la familia Manor sufre el secuestro y asesinato de Ana María
+                            Manor. Ana Isabelle se contacta
+                            con el detective Juan Tael Gómez para investigar el caso. La trama toma un giro sádico y
+                            oscuro.</p>
 
-                <h3>Prólogo</h3>
-                <p>4 de marzo de 2020 - 13:30 Horas</p>
-                <p>Allá por EL 2015 yacía en mí casa en Escocia luego de una ruptura amorosa, eran más de las 1 de la
-                    tarde, yo no sabía qué hacer. Ese día recuerdo que volvía de una tienda de ropa, observando las
-                    calles, las personas, los autos, todo en general. Me asombraba ver que la gente no tuviera ningún
-                    comportamiento sospechoso, pues había bastante seguridad, y de pronto cuando me dispuse a salir de
-                    la tienda recibí un llamado de Ana Isabelle Manor, la reina de la vieja escuela escocesa (Scottish
-                    School Teenagers And Old Mans And Womens), diciéndome que su hija Ana María había desaparecido y se
-                    encontró una blusa, más precisamente la blusa que Ana María usó ese día. Pero déjenme contarle más a
-                    fondo…</p>
+                        <h3>Prólogo</h3>
+                        <p>4 de marzo de 2020 - 13:30 Horas</p>
+                        <p>Recuerdo que volvía de una tienda de ropa en Escocia cuando recibí un llamado de Ana Isabelle
+                            Manor,
+                            notificándome que su hija Ana María había desaparecido y que se encontró una blusa. Esto
+                            marcó el inicio de un caso
+                            lleno de misterios y peligros.</p>
 
-                <h3>Capítulo I</h3>
-                <p>20 de febrero de 2015 - 14:15 - 17:15 Horas</p>
-                <p>-Ana Isabelle Manor- Tael tengo un caso, mi hija Ana María, desapareció ayer por la noche, mientras
-                    dormíamos. Eran aproximadamente las 03:20 de la mañana cuando escuchamos un ruido en su habitación.
-                    Fuimos a ver si estaba bien, y ya no estaba.</p>
-                <p>-Tael- Mmm. Bueno, ¿Ella estaba durmiendo?</p>
-                <p>-Ana Isabelle Manor- No, estaba esperando al novio. Ya fuimos a su casa, y la buscamos en cada
-                    rincón.</p>
-                <p>-Tael- Bueno, ¿ahora dónde está?</p>
-                <p>-Ana Isabelle Manor- Estoy con Phil Manor IV, en el parque a cinco calles del castillo.</p>
-                <p>-Tael- Ok, ya estoy yendo.</p>
-                <p>Luego de una exhausta espera, Tael llegó, encontrándose con la sorpresa de que en el parque no había
-                    nadie.</p>
-                <p>Bueno, a lo mejor se han ido debido a mí tardanza. -Pensó Tael-</p>
-                <p>Lo que él no sabía es que los reyes sí estaban, pero no donde él creía. Están ahí con él, pero nunca
-                    dijeron la ubicación exacta en donde están.</p>
+                        <h3>Capítulo I</h3>
+                        <p>20 de febrero de 2015 - 14:15 - 17:15 Horas</p>
+                        <p>Tael investiga junto a Ana Isabelle Manor la desaparición de Ana María. Tras recorrer la
+                            ciudad y el parque,
+                            descubre que la ubicación de la víctima era distinta a la esperada y que hay múltiples
+                            hipótesis sobre quién pudo haber
+                            planeado el crimen.</p>
 
-                <h3>Capítulo II</h3>
-                <p>20 de febrero de 2015 - 17:25 Horas</p>
-                <p>20 minutos después, llegó la policía local, los bomberos y la ambulancia. Tael estaba ahí, lo
-                    interrogaron, y le preguntaron quién era y qué hacía ahí.</p>
-                <p>Él dijo que era un detective privado y que estaba buscando a los reyes Manor. Los policías le dijeron
-                    que los reyes Manor habían sido asesinados hace 30 minutos por el asesino de Ana María, la chica del
-                    caso que él había estado investigando durante todo el día. Pero, ¿quién es el asesino? ¿quién y para
-                    qué quiso eliminar a los reyes? Muchas dudas y pocas certezas, pero Tael no es de rendirse fácil,
-                    siguió investigando y encontró 4 pistas claras de quién era el asesino.</p>
-                <ul>
-                    <li>Un teléfono móvil que seguía una dirección IP, que provenía de un servidor del castillo.</li>
-                    <li>Un cuchillo dorado con diamantes, exclusivo de los altos cargos, y raramente usado. Era
-                        utilizado en reuniones altamente importantes. De los empleados, solo podían ingresar al
-                        cubertero de oro, el sub mayordomo calificado como exclusivo de reuniones y el mayordomo
-                        calificado exclusivo de reuniones, y todos los altos directivos.</li>
-                    <li>Un saco de cocinero, con perlas y esmeraldas.</li>
-                </ul>
-                <p>No había casi duda, era él, Phil IV, pero también había 2 sospechosos algo claros.</p>
-                <p>El Mayordomo y el Sub Mayordomo, sin contar a los altos directivos del castillo.</p>
-                <p>Sin duda un caso con muchas inconsistencias y pocas certezas, pero atrapante.</p>
-                <p>Se resaltaron 4 hipótesis:</p>
-                <ol>
-                    <li>La primera hipótesis cuenta que el rey Phil IV secuestró a su hija, la encerró en un sótano
-                        secreto del castillo, y luego la mató, y en el parque antes de matar a Ana Isabelle dejó todas
-                        las pistas para despistar y luego mató a Ana Isabelle y luego se suicidó.</li>
-                    <li>La segunda teoría sugiere que fue el mayordomo exclusivo de reuniones, ya que se dice que quería
-                        ser rey, pero no podía, porque no era primogénito del rey.</li>
-                    <li>La tercera teoría dice que pudo haber sido el Sub Mayordomo exclusivo de reuniones enviado por
-                        el mayordomo exclusivo de reuniones.</li>
-                    <li>Y la cuarta, que fue el novio, y puso todas esas pistas, para despistar a quien investigue el
-                        caso.</li>
-                </ol>
-                <p>Y bien, el detective Tael se dio cuenta de que una teoría era claramente imposible, la tercera, ya
-                    que el Submayordomo estaba de vacaciones en su pueblo natal, así que rápidamente fue descartada.</p>
+                        <h3>Capítulo II</h3>
+                        <p>20 de febrero de 2015 - 17:25 Horas</p>
+                        <p>La policía llega al lugar. Tael es interrogado, mientras que los reyes Manor son asesinados
+                            por los perpetradores.
+                            Se descubren 4 pistas clave: un teléfono con IP rastreable, un cuchillo dorado y exclusivo,
+                            un saco de cocinero con joyas,
+                            y la presencia del mayordomo y sub mayordomo.</p>
 
-                <h3>Capítulo III</h3>
-                <p>27 de febrero de 2015 - 10:30 Horas</p>
-                <p>Había pasado una semana desde las últimas novedades, cuando de repente en el maletero del coche de
-                    Tael apareció una pistola Beretta 9MM, cargada y lista para disparar. De repente, detrás de Tael
-                    aparece una patrulla de la policía de Aberdeen, en busca de su detención. Se afirmó de manera muy
-                    dudosa que Juan Tael Gómez es el culpable y cerebro del plan del asesinato de Ana María Manor, el
-                    asesinato no planeado de Ana Isabelle Manor y Phil Manor IV en estado de inconsciencia.</p>
-                <p>El día 4 de marzo de 2016 se lo condenó a 6 años de prisión domiciliaria con acceso a libertad
-                    condicional debido a los problemas psicológicos que padece.</p>
-                <p>El día 4 de marzo de 2020 se descubrió que no fue una sola persona, ni un asesinato accidental o
-                    casual, sino que fue un secuestro planeado, pero por un error terminó todo mal.</p>
-                <p>Los perpetradores sabían cómo entrar sin hacer ruido, pero algo les salió mal, porque Ana Isabelle
-                    los escuchó. Los perpetradores del secuestro fueron el mayordomo George Kraven y el chofer Charles
-                    Boulevard, el planificador del plan fue ni más ni menos que Phil Manor III, antiguo rey del castillo
-                    y padre de Phil Manor IV.</p>
+                        <h3>Capítulo III</h3>
+                        <p>27 de febrero de 2015 - 10:30 Horas</p>
+                        <p>Una semana después, Tael encuentra una pistola en su coche y es acusado falsamente de los
+                            asesinatos.
+                            Se determina que el secuestro fue planeado, con errores que provocaron muertes accidentales.
+                        </p>
 
-                <h3>Capítulo IV</h3>
-                <p><strong>Conclusión</strong></p>
-                <p>El planificador tenía un motivo muy absurdo para llevar a cabo el plan.</p>
-                <p>El hijo Phil Manor IV había vendido más de 15 territorios de los Manor a los Windsor, familia la cual
-                    siempre tuvieron una mala percepción de la familia Manor, porque decían que Ana María Manor en
-                    realidad no era humana, sino un reptil o el mismo diablo.</p>
-                <p>Phil Manor III quería deshacerse de Ana María y sabía muy bien cómo.</p>
-                <p>El día 4 de marzo de 2020, Phil Manor III, a los 70 años, fue condenado a 4 perpetuas por
-                    delincuencia organizada, tráfico de personas, tráfico de armas, asesinato múltiple en primer grado y
-                    obstrucción a la justicia.</p>
+                        <h3>Capítulo IV</h3>
+                        <p>El planificador: Phil Manor III había vendido territorios de los Manor y buscaba eliminar a
+                            Ana María Manor.
+                            Fue condenado a 4 perpetuas por múltiples crímenes graves.</p>
 
-                <h3>Capítulo V</h3>
-                <p><strong>Conclusión 2</strong></p>
-                <p>Por último, hay quien dice que también estuvieron involucrados Phil Manor IV y Ana Isabelle Manor,
-                    cuando Ana Isabelle llamó a Tael.</p>
-                <p>A día de hoy, esta teoría perdió fuerza y credibilidad, pues el verdadero culpable, que además fue el
-                    cerebro del plan, está preso y lo estará hasta el fin de sus días, debido a que fue condenado a 4
-                    perpetuas y se pudo acceder al servidor del que provenía la dirección IP del teléfono móvil que
-                    estaba en el parque, y allí dentro estaban todos los datos del plan y cómo iba a ser el ingreso para
-                    perpetrar el ataque.</p>
+                        <h3>Capítulo V</h3>
+                        <p>Se descartó la participación de Phil Manor IV y Ana Isabelle Manor. El cerebro del plan fue
+                            Phil Manor III, quien permanece preso.</p>
 
-                <h3>Capítulo VI</h3>
-                <p>Los culpables fueron: Phil Manor III (Antiguo Rey del castillo Manor) padre de Phil Manor IV, George
-                    Kraven (Mayordomo) y Charles Boulevard (Chofer del castillo).</p>
+                        <h3>Capítulo VI</h3>
+                        <p>Los culpables finales: Phil Manor III, George Kraven (mayordomo) y Charles Boulevard
+                            (chofer).</p>
 
-                <p><strong>FIN</strong></p>
+                        <p><strong>FIN</strong></p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
