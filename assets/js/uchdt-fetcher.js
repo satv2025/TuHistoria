@@ -12,12 +12,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
             let text = await response.text();
 
-            // 🚀 Formateo por bloques
+            // 🚀 Formateo por bloques: toma todo hasta el próximo prefijo o final
             text = text
-                .replace(/\{formatear-titulo\}([\s\S]*?)(?=\n\{formatear-|$)/g, "<h3 style='text-align: center'>$1</h3>")
-                .replace(/\{formatear-subtitulo\}([\s\S]*?)(?=\n\{formatear-|$)/g, "<p id='subtitulo-uchdt' style='font-weight: 500'>$1</p>")
-                .replace(/\{formatear-texto\}([\s\S]*?)(?=\n\{formatear-|$)/g, "<p>$1</p>")
-                .replace(/\{formatear-pie\}([\s\S]*?)(?=\n\{formatear-|$)/g, "<p style='font-style: italic; color:#555'>$1</p>");
+                .replace(/\{formatear-titulo\}([\s\S]*?)(?=\{formatear-|$)/g, "<h3 style='text-align: center'>$1</h3>")
+                .replace(/\{formatear-subtitulo\}([\s\S]*?)(?=\{formatear-|$)/g, "<p id='subtitulo-uchdt' style='font-weight: 500'>$1</p>")
+                .replace(/\{formatear-texto\}([\s\S]*?)(?=\{formatear-|$)/g, "<p>$1</p>")
+                .replace(/\{formatear-pie\}([\s\S]*?)(?=\{formatear-|$)/g, "<p style='font-style: italic; color:#555'>$1</p>");
 
             container.innerHTML = text;
         } catch (err) {
