@@ -12,12 +12,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
             let text = await response.text();
 
-            // 🚀 Reemplazos según prefijos
+            // 🚀 Formateo por bloques
             text = text
-                .replace(/\{formatear-titulo\}(.*?)(\r?\n|$)/g, "<h3>$1</h3>")
-                .replace(/\{formatear-subtitulo\}(.*?)(\r?\n|$)/g, "<p style='font-weight: bold'>$1</p>")
-                .replace(/\{formatear-texto\}(.*?)(\r?\n|$)/g, "<p>$1</p>")
-                .replace(/\{formatear-pie\}(.*?)(\r?\n|$)/g, "<p style='font-style: italic; color:#555'>$1</p>");
+                // Título
+                .replace(/\{formatear-titulo\}([\s\S]*?)(?=\n\{formatear-|$)/g, "<h3>$1</h3>")
+                // Subtítulo
+                .replace(/\{formatear-subtitulo\}([\s\S]*?)(?=\n\{formatear-|$)/g, "<p class='subtitulo'>$1</p>")
+                // Texto
+                .replace(/\{formatear-texto\}([\s\S]*?)(?=\n\{formatear-|$)/g, "<div class='texto'>$1</div>")
+                // Pie
+                .replace(/\{formatear-pie\}([\s\S]*?)(?=\n\{formatear-|$)/g, "<p class='pie'>$1</p>");
 
             container.innerHTML = text;
         } catch (err) {
