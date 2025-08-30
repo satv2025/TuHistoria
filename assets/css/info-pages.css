@@ -1,5 +1,10 @@
 @import url("https://fuentes.solargentinotv.com.ar/netflixsans.css");
 
+::selection {
+    background-color: #810000;
+    color: #fff
+}
+
 * {
     font-family: 'Netflix Sans';
 }

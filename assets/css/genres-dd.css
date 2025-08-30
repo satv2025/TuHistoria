@@ -1,4 +1,9 @@
 /* ====== NAV / DROPDOWN ====== */
+::selection {
+    background-color: #810000;
+    color: #fff
+}
+
 nav ul {
     list-style: none;
     margin: 0;

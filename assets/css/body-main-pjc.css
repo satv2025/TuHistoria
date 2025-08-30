@@ -1,6 +1,11 @@
 @import url("https://fuentes.solargentinotv.com.ar/netflixsans.css");
 
 /* ====== GLOBAL ====== */
+::selection {
+    background-color: #810000;
+    color: #fff
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
