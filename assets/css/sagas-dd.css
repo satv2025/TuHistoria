@@ -24,6 +24,8 @@
 .dropdown-temporadas.active #season-btn {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    color: #181818;
+    background: #f00;
 }
 
 /* Flecha del botón */
