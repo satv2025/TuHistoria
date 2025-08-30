@@ -11,7 +11,7 @@
 
 {formatear-texto} Hasta el momento nadie sabe nada de Lucía, la justicia ya no habla de desaparición, sino de homicidio, aunque las familias de los chicos ya no saben qué hacer.
 
-{formatear-texto} {formatear-texto} No es sino hasta enero de 2011, casi un año, que se encuentran tres baúles similares al encontrado en 2010, solo que, en vez de una bolsa negra, había cuatro bolsas negras por baúl. A la semana de hallados los baúles, se comprobó que, en efecto, los tres baúles encontrados y el encontrado a mediados de 2010, contenían cadáveres de niños y mujeres, pero ninguno coincidía con el cuerpo de Lucía.
+{formatear-texto} No es sino hasta enero de 2011, casi un año, que se encuentran tres baúles similares al encontrado en 2010, solo que, en vez de una bolsa negra, había cuatro bolsas negras por baúl. A la semana de hallados los baúles, se comprobó que, en efecto, los tres baúles encontrados y el encontrado a mediados de 2010, contenían cadáveres de niños y mujeres, pero ninguno coincidía con el cuerpo de Lucía.
 
 {formatear-texto} Luego de transcurridos unos once largos años, en febrero de 2022, con el caso ya cerrado, aparecen más pistas, al punto que la policía quedó desconcertada, porque como puede ser que luego de doce años, haya novedades, si ni siquiera se estaba investigando, bueno, eso iba a ser respondido con esta pista. Cerca de la vieja casa de Jimen hacer a, ahora casa de su tía María Anabel, se encontró la remera rosa que Lucía había usado el día de su desaparición.
 
@@ -61,7 +61,6 @@ Después cuando Franco me “asesina” me deja en la habitación de Jime, luego
 - Madre - Hijo, ¿estás seguro de que fue un sueño?
 - Chico - Si mamá, ¿Por qué?
 
+{formatear-pie} Una clásica historia de terror es un relato de terror ficticio, y nada de lo narrado debe ser tomado como algo real, cualquier similitud con la realidad es pura coincidencia.
 
-{formatear-texto} Una clásica historia de terror es un relato de terror ficticio, y nada de lo narrado debe ser tomado como algo real, cualquier similitud con la realidad es pura coincidencia.
-
-{formatear-texto} Este relato fue creado con la idea de que el lector imagine todo en su cabeza, y reviva los clásicos del terror.
+{formatear-pie} Este relato fue creado con la idea de que el lector imagine todo en su cabeza, y reviva los clásicos del terror.

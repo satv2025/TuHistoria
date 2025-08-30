@@ -11,9 +11,13 @@ document.addEventListener("DOMContentLoaded", () => {
             if (!response.ok) throw new Error("No se pudo cargar el archivo");
 
             let text = await response.text();
+
+            // 🚀 Reemplazos según prefijos
             text = text
                 .replace(/\{formatear-titulo\}(.*?)(\r?\n|$)/g, "<h3>$1</h3>")
-                .replace(/\{formatear-texto\}(.*?)(\r?\n|$)/g, "<p>$1</p>");
+                .replace(/\{formatear-texto\}(.*?)(\r?\n|$)/g, "<p>$1</p>")
+                .replace(/\{formatear-pie\}(.*?)(\r?\n|$)/g, "<p style='font-style: italic; color:#555'>$1</p>");
+
             container.innerHTML = text;
         } catch (err) {
             container.innerHTML = `<p style="color:red">Error: ${err.message}</p>`;
