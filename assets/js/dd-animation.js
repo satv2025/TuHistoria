@@ -6,20 +6,22 @@ const options = dropdown.querySelectorAll('.season-option');
 let isOpen = false;
 
 function openDropdown() {
-    // 1️⃣ Cambiar border-radius primero
+    // Cambiar border-radius primero
     btn.style.borderBottomLeftRadius = '0';
     btn.style.borderBottomRightRadius = '0';
 
-    // 2️⃣ Esperar un instante antes de deslizar
+    // Espera pequeña para que el borde se aplique
     setTimeout(() => {
-        optionsContainer.style.maxHeight = optionsContainer.scrollHeight + 'px'; // slide down
+        optionsContainer.style.borderColor = '#810000'; // activa borde inferior
+        optionsContainer.style.maxHeight = optionsContainer.scrollHeight + 'px'; // slide-down real
         dropdown.classList.add('active');
         isOpen = true;
     }, 50);
 }
 
 function closeDropdown() {
-    optionsContainer.style.maxHeight = '0'; // slide up
+    optionsContainer.style.maxHeight = '0'; // slide-up real
+    optionsContainer.style.borderColor = 'transparent'; // quita borde inferior
 
     // Restaurar border-radius después del slide
     setTimeout(() => {
@@ -27,10 +29,10 @@ function closeDropdown() {
         btn.style.borderBottomRightRadius = '8px';
         dropdown.classList.remove('active');
         isOpen = false;
-    }, 400); // igual a duración del slide
+    }, 400); // coincide con duración del slide
 }
 
-// Click en botón principal
+// Click en botón
 btn.addEventListener('click', (e) => {
     e.stopPropagation();
     if (isOpen) {

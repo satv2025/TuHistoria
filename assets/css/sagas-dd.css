@@ -48,13 +48,14 @@
     transform: translateY(-50%) rotate(180deg);
 }
 
-/* Contenedor de opciones para slide real */
+/* Contenedor de opciones */
 .season-options {
     position: absolute;
     top: 100%;
     left: 0;
     background: #181818;
-    border: 2px solid #810000;
+    /* Inicialmente sin borde para evitar el borde inferior visible */
+    border: 2px solid transparent;
     border-top: none;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
@@ -65,9 +66,17 @@
     overflow: hidden;
 
     max-height: 0;
-    /* cerrado */
-    transition: max-height 0.4s ease;
+    transition: max-height 0.4s ease, border 0.2s ease;
     z-index: 999;
+}
+
+/* Mostrar opciones al abrir */
+.dropdown-temporadas.active .season-options {
+    max-height: 500px;
+    /* suficiente para todas las opciones */
+    border: 2px solid #810000;
+    /* agrega borde al desplegar */
+    border-top: none;
 }
 
 /* Opciones individuales */
