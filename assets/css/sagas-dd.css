@@ -1,18 +1,17 @@
 .dropdown-temporadas {
     position: relative;
     display: inline-block;
+    font-weight: 700;
 }
 
+/* Botón principal como div */
 #season-btn {
     background: #181818;
     color: #810000;
     border: 2px solid #810000;
     border-radius: 8px;
     padding: 10px 20px;
-    font-weight: 700;
-    font-size: 16px;
     cursor: pointer;
-    outline: none;
     position: relative;
     transition: all 0.3s;
 }
@@ -28,6 +27,7 @@
     transform: rotate(180deg);
 }
 
+/* Opciones */
 .season-options {
     display: none;
     position: absolute;
@@ -42,18 +42,13 @@
     margin-top: 5px;
 }
 
-.season-options button {
-    background: #181818;
-    color: #810000;
-    border: none;
+.season-option {
     padding: 10px;
-    text-align: left;
     cursor: pointer;
-    font-weight: 700;
     transition: all 0.3s;
 }
 
-.season-options button:hover {
+.season-option:hover {
     background: #810000;
     color: #181818;
 }
