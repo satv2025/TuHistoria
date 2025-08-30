@@ -20,8 +20,8 @@ function closeDropdown() {
 
     // Restauramos border-radius después de que termine la animación
     setTimeout(() => {
-        btn.style.borderBottomLeftRadius = '8px';
-        btn.style.borderBottomRightRadius = '8px';
+        btn.style.borderBottomLeftRadius = '0.2em';
+        btn.style.borderBottomRightRadius = '0.2em';
     }, 400); // coincide con duration del slide
 }
 
