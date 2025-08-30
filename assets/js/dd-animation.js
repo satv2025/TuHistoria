@@ -4,10 +4,16 @@ const btn = document.getElementById('season-btn');
 btn.addEventListener('click', (e) => {
     e.stopPropagation();
 
-    // Paso 1: aplicar borde superior antes de abrir
+    // Si está abierto, cerramos y salimos
+    if (dropdown.classList.contains('active')) {
+        dropdown.classList.remove('active');
+        return;
+    }
+
+    // Si está cerrado, aplicar borde antes de abrir
     dropdown.classList.add('pre-open');
 
-    // Paso 2: después de 200ms, activar el dropdown y quitar pre-open
+    // Después de 200ms, abrir y quitar pre-open
     setTimeout(() => {
         dropdown.classList.add('active');
         dropdown.classList.remove('pre-open');
