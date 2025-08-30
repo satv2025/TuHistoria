@@ -18,6 +18,7 @@
     transition: all 0.3s;
     width: 7.5em;
     height: 1.3em;
+    z-index: 1000;
 }
 
 /* Cuando el dropdown está activo, solo top-left y top-right */
@@ -51,7 +52,7 @@
 /* Contenedor de opciones */
 .season-options {
     position: absolute;
-    top: 100%;
+    top: 95%;
     left: 0;
     background: #181818;
     border: 2px solid #810000;
@@ -68,6 +69,7 @@
     transform: scaleY(0);
     transform-origin: top;
     transition: transform 0.3s ease;
+    z-index: 999;
 }
 
 /* Mostrar opciones al abrir */
