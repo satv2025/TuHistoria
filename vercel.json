@@ -2,12 +2,12 @@
     "cleanUrls": true,
     "rewrites": [
         {
-            "source": "/historias/sagas/:folder",
-            "destination": "/historias/sagas/:folder/:folder.html"
+            "source": "/historias/sagas/:saga",
+            "destination": "/historias/sagas/:saga/index.html"
         },
         {
-            "source": "/historias/:name",
-            "destination": "/historias/:name.html"
+            "source": "/historias/:historia",
+            "destination": "/historias/:historia/index.html"
         }
     ]
 }
