@@ -3,33 +3,31 @@
 {formatear-titulo} UNA CLÁSICA HISTORIA DE TERROR 2
 {formatear-titulo} LA SECUELA
 
-{formatear-titulo} ¡Atención! Leer antes de comenzar: UCHDT 2 es la secuela de UCHDT 1, en la que entenderás un poco mas todo lo que pasó con Demetrio y Ricardo, y si Lucía vuelve a aparecer o no. Solo resta leerla. 
+{formatear-subtitulo} ¡Atención! Leer antes de comenzar: UCHDT 2 es la secuela de UCHDT 1, en la que entenderás un poco mas todo lo que pasó con Demetrio y Ricardo, y si Lucía vuelve a aparecer o no. Solo resta leerla. 
 
-{formatear-titulo} Domingo 15 de enero de 2023 – 12:00 HS
+{formatear-subtitulo} Domingo 15 de enero de 2023 – 12:00 HS
 {formatear-texto} Yacían en una humilde casa en Villa Luzuriaga, Edelmiro Felicitas (Padre), Rudolfina Carrasco (Madre) y Morena Felicitas (Hija) desayunando en familia, cuando escucharon el timbre, eran sus amigos, Marcos Echavarría, Franco Mendoza, Martina Cáceres y Micaela Pérez, todos de 16 años. Los chicos venían a jugar y charlar con Morena.
 
-{formatear-titulo} 19:30 HS
+{formatear-subtitulo} 19:30 HS
 {formatear-texto} Jugaron por horas, hasta que empezó a anochecer, aproximadamente a las 19:30 HS. Luego de eso, todos fueron a dormir.
 
-{formatear-titulo} Lunes 16 de enero de 2023 - 12:24 HS
+{formatear-subtitulo} Lunes 16 de enero de 2023 - 12:24 HS
 {formatear-texto} Noticias: El día domingo 15 de enero alrededor de las 23hs una familia denunció la desaparición de la hija, que estaba volviendo de estar con amigos, según la familia, era raro que tarde en llegar, ya que de dónde venía, era a unas pocas cuadras.
 
-{formatear-titulo} Sábado 4 de febrero de 2023 - 12:30 HS
+{formatear-subtitulo} Sábado 4 de febrero de 2023 - 12:30 HS
 {formatear-texto} Tras días de vacíos informacionales acerca de la chica desaparecida, se reveló el nombre de la chica, Martina Cáceres. La policía buscó cámaras, pruebas, testigos, etc. Tras un tiempo de investigación, se descubrió, que no fue una desaparición accidental, sino una desaparición planeada. En las grabaciones, había dos hombres encapuchados, y no se sabía quiénes eran y no dejaban ver su cara.
 Nadie sabe quiénes son por ahora, pero creen que son los responsables o están involucrados en la desaparición de Martina.
 
-{formatear-titulo} Sábado 4 de marzo de 2023 - 12:30 HS
+{formatear-subtitulo} Sábado 4 de marzo de 2023 - 12:30 HS
 {formatear-texto} Tras un largo mes de investigación, la policía se percató de que en la pierna izquierda de ambos encapuchados había un dispositivo policial, que lo llevan los reclusos para reconocerlos si huyen de la prisión. Luego de eso, mandaron a revisar las celdas en Ezeiza, Devoto y Sierra Chica, para contar a los reclusos. Luego de una larga revisión, se detectó que faltaban cuatro reclusos, dos de ellos, eran “Demetrio Soldán” y “Ricardo Lezcano”, si, los criminales asesinos con probablemente más de los comprobados trece crímenes que secuestraron a Lucía en 2010.
 
-
-
-{formatear-titulo} Viernes 10 de noviembre de 2023 10:30 HS
+{formatear-subtitulo} Viernes 10 de noviembre de 2023 10:30 HS
 {formatear-texto} Comunicado de la PFA (Policía Federal Argentina): Tras varios meses de investigación, hemos logrado confirmar que Martina fue secuestrada por al menos 3 personas, dos perpetrando el ataque y uno haciendo campana en un vehículo. También confirmamos que dos de esos sospechosos son dos de los cuatro reclusos que se fugaron. Todavía no logramos confirmar y/o descubrir su identidad, pero creemos que son Demetrio Soldán y Ricardo Lezcano, criminales condenados por trece crímenes y un secuestro con tentativa de homicidio. Si nuestra hipótesis no falla, Demetrio y Ricardo, volvieron a cometer sus atrocidades. Aún no sabemos cómo escaparon, si un guardia los ayudó, si alguien más los ayudó, o si uno de los dos reclusos restantes que se fugaron, planeó todo.
 También estamos tratando de dar con el paradero de Martina, pero por el momento es casi imposible porque no tenemos información acerca de los sospechosos. Es claro, evidente, primordial y crucial, recordar, que, cualquier búsqueda o investigación fuera de orden policial, será considerada obstrucción a la justicia. Los únicos autorizados a investigar es la policía, por eso les pedimos paciencia con la investigación.
 
 {formatear-texto} A este punto estoy seguro que no sabés que está pasando, la policía prohíbe cualquier investigación no policial, confirmando que Demetrio y Ricardo escaparon, y no se sabe cómo.
 
-{formatear-titulo} Martes 10 de noviembre de 2026 - 20:30 HS
+{formatear-subtitulo} Martes 10 de noviembre de 2026 - 20:30 HS
 {formatear-texto} -	Vecina - Rudolfina, Edelmiro, acabo de ver a los padres de la chica desaparecida hablando con dos encapuchados en la puerta de la casa.
 -	Edelmiro - ¿Segura, doña Rosa?
 -	Doña Rosa (Vecina) - Si, hay que decírselo a la policía, ¡PERO YA!
@@ -37,12 +35,12 @@ También estamos tratando de dar con el paradero de Martina, pero por el momento
 -	Doña Rosa - ¡PERO ESTO ES ACERCA DE UNA MENOR, NO DEBEMOS HACER OIDOS SORDOS PORQUE LA POLICÍA NO QUIERA QUE NOSOTROS INVESTIGUEMOS, ¡Y DE SEGURO DEBE SER PORQUE ELLOS COMETEN ACTOS DE CORRUPCIÓN!, Y DE SEGURO, ELLOS AYUDARON A FUGARSE A DEMTRIO Y A RICARDO.!
 -	Edelmiro - Doña Rosa tiene razón, Rudolfina, vamos a reportarlo a la policía.
 
-{formatear-titulo} 22:30 HS
+{formatear-subtitulo} 22:30 HS
 {formatear-texto} -	Doña Rosa – Oficial le digo que es enserio, vi como los padres de Martina hablaban con los dos encapuchados, mire, puede ir usted a comprobar señor oficial.
 -	 Oficial de policía – Primero, no me diga usted, dígame Oficial Fernández, me llamo Héctor Fernández, y segundo, ahora mismo desplegaremos un operativo para detener a los padres de Martina.
 -	Doña Rosa – Bendecido por dios sea usted Oficial Fernández.
 
-{formatear-titulo} Miércoles 11 de noviembre de 2026 – 02:30 AM
+{formatear-subtitulo} Miércoles 11 de noviembre de 2026 – 02:30 AM
 {formatear-texto} El miércoles a las 02:30 de la madrugada, mientras que Marcelo Cáceres y Renata Rinaldi estaban durmiendo, la Policía Federal Argentina irrumpió en la tranquila vivienda de los Cáceres, para detener por el presunto conocimiento y presunta desaparición de su hija Martina.
 
 {formatear-texto} -	Marcelo Cáceres - ¿Qué está pasando? ¿De qué me están acusando?
@@ -50,46 +48,43 @@ También estamos tratando de dar con el paradero de Martina, pero por el momento
 -	Marcelo – Esos eran los verduleros de acá a la vuelta, fíjese, hay una verdulería acá a dos cuadras.
 -	Oficial Fernández – Sobran las pruebas, LLEVENSELOS.
 
-{formatear-titulo} 06:30 HS
+{formatear-subtitulo} 06:30 HS
 {formatear-texto} -	Renata - Oficial, le estamos diciendo la verdad, nosotros no sabemos nada de Martina, como le dijo mi marido, esos eran los verduleros, les estábamos encargando, lechuga, cebolla y papa, es verdad.
 -	Oficial Fernández - Lo siento señora, pero nosotros comparamos la descripción de los encapuchados de las cámaras con la que los que usted dice que son los verduleros, y son muy similares, Agente González y Agente Suárez, Llévenselos a la celda, a prisión preventiva. 
 
 {formatear-texto} Tras haber deliberado trasladar a Marcelo y Renata a prisión preventiva, la policía se decidió a localizar a los encapuchados, pero eso no iba a ser algo sencillo, había que reunir más información.
 
-
-
-{formatear-titulo} Miércoles 18 de noviembre de 2026 – 13:40 HS
+{formatear-subtitulo} Miércoles 18 de noviembre de 2026 – 13:40 HS
 {formatear-texto} Tras una semana de investigación y recolección de pruebas, la policía decidió reconstruir el recorrido de los encapuchados, y así descubrieron que el recorrido empezaba y terminaba en una casa a 10km del barrio.
 
 {formatear-texto} La policía con el recorrido reconstruido y locaciones obtenidas, se decidieron ir a buscar a los encapuchados.
 
-{formatear-titulo} Mientras tanto en la familia Felicitas:
-{formatear-titulo} iércoles 25 de noviembre de 2026 – 09:25 HS
+{formatear-subtitulo} Mientras tanto en la familia Felicitas:
+{formatear-subtitulo} iércoles 25 de noviembre de 2026 – 09:25 HS
 {formatear-texto} -	Rudolfina (con tristeza y dolor) - More, nos vamos a mudar, ya tenemos la casa nueva, nos vamos a Nordelta, no podemos seguir acá, o al menos, por el momento.
 -	Morena (con tono triste y melancólico) - P.. Pe.. Pero, que voy a hacer yo, mis amigos, mis amigas, mi escuela.
 -	Edelmiro (con optimismo y tristeza) - Tendrás que conocer gente nueva, además, viviremos mejor, abandonaremos todo, pero estaremos mejor.
 
 {formatear-texto} Tras la triste mudanza y un temporal adiós a la casa de la familia Felicitas, y un nuevo comienzo, Morena se propuso terminar la secundaria y luchar por volver a su barrio, y volverlo un lugar mejor.
 
-{formatear-titulo} Miércoles 1 de diciembre de 2026 - 20:30 HS
+{formatear-subtitulo} Miércoles 1 de diciembre de 2026 - 20:30 HS
 {formatear-texto} Comunicado de la PFA (Policía Federal Argentina): El día domingo 10 de enero de 2027 se realizará el juicio a Marcelo Cáceres y Renata Rinaldi, los padres de Martina, por su presunta participación o coparticipación en la desaparición de Martina.
 
 {formatear-texto} Tras ese comunicado, en el país hubo una ola de confusión y desconcierto porque pensaban que, cómo los padres pudieron haber hecho eso.
 
-{formatear-titulo} Viernes 8 de enero de 2027 - 14:30 HS
+{formatear-subtitulo} Viernes 8 de enero de 2027 - 14:30 HS
 {formatear-texto} Luego de casi un año de la desaparición de Martina, se descubrió que los encapuchados como la policía sospechó, eran Demetrio y Ricardo, a quienes Marcelo y Renata, ayudaron a escapar, junto a dos presos más para confundir más a la policía y también le vendieron a Martina para venderla al exterior a tratantes de blancas.
 
-
-{formatear-titulo} Domingo 10 de enero de 2027 - 15:30 HS
+{formatear-subtitulo} Domingo 10 de enero de 2027 - 15:30 HS
 {formatear-texto} Tras haber descubierto eso, los padres de Martina, Marcelo Cáceres y Renata Rinaldi, fueron condenados a diez años de prisión, por trata de blancas y la justicia le quitaría la custodia de Martina, en el caso de encontrarla.
 
-{formatear-titulo} Lunes 11 de enero de 2027 - 16:30 HS
+{formatear-subtitulo} Lunes 11 de enero de 2027 - 16:30 HS
 {formatear-texto} En un callejón oscuro en Carapachay, un vecino encontró a Martina, y la reportó a la policía.
 
-{formatear-titulo} Viernes 15 de enero de 2027 – 12:00 HS
+{formatear-subtitulo} Viernes 15 de enero de 2027 – 12:00 HS
 {formatear-texto} Un año después de la desaparición de Martina, todo terminó y apareció, también encontraron a Demetrio y Ricardo. El día jueves 14 de enero, informaron que se estableció el juicio el domingo 15 de agosto, de Demetrio y Ricardo.
 
-{formatear-titulo} Domingo 15 de agosto de 2027 – 12:00 HS
+{formatear-subtitulo} Domingo 15 de agosto de 2027 – 12:00 HS
 {formatear-texto} Demetrio Soldán y Ricardo Lezcano, fueron condenados a prisión perpetua, con custodio policial 24/7.
 {formatear-texto} Ese juicio, fue televisado en todos los medios, desde infantiles hasta deportivos, y también, declaró el fin de Demetrio y Ricardo, y, por consiguiente, también declaró el final de esta historia, plagada de tristeza, melancolía y suspenso, que te mantuvo pegado hasta el final, y que tuvo un final ¿feliz? Eso lo dejo a tu criterio.
 

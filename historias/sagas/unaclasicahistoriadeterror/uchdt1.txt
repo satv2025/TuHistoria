@@ -61,6 +61,7 @@ Después cuando Franco me “asesina” me deja en la habitación de Jime, luego
 - Madre - Hijo, ¿estás seguro de que fue un sueño?
 - Chico - Si mamá, ¿Por qué?
 
+{formatear-texto} 
 {formatear-pie} Una clásica historia de terror es un relato de terror ficticio, y nada de lo narrado debe ser tomado como algo real, cualquier similitud con la realidad es pura coincidencia.
 
 {formatear-pie} Este relato fue creado con la idea de que el lector imagine todo en su cabeza, y reviva los clásicos del terror.
