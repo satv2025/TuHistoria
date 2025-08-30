@@ -60,7 +60,7 @@ También estamos tratando de dar con el paradero de Martina, pero por el momento
 {formatear-texto} La policía con el recorrido reconstruido y locaciones obtenidas, se decidieron ir a buscar a los encapuchados.
 
 {formatear-subtitulo} Mientras tanto en la familia Felicitas:
-{formatear-subtitulo} iércoles 25 de noviembre de 2026 – 09:25 HS
+{formatear-subtitulo} Miércoles 25 de noviembre de 2026 – 09:25 HS
 {formatear-texto} -	Rudolfina (con tristeza y dolor) - More, nos vamos a mudar, ya tenemos la casa nueva, nos vamos a Nordelta, no podemos seguir acá, o al menos, por el momento.
 -	Morena (con tono triste y melancólico) - P.. Pe.. Pero, que voy a hacer yo, mis amigos, mis amigas, mi escuela.
 -	Edelmiro (con optimismo y tristeza) - Tendrás que conocer gente nueva, además, viviremos mejor, abandonaremos todo, pero estaremos mejor.

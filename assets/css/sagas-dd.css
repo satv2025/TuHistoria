@@ -1,10 +1,9 @@
 .dropdown-temporadas {
-    position: relative;
+    position: absolute;
     display: inline-block;
     font-weight: 700;
-    margin-left: 39em;
-    margin-top: 1em;
-    z-index: 1000;
+    margin-left: 38.6em;
+    margin-top: 1.2em;
 }
 
 /* Botón principal como div */
