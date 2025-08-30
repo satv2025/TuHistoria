@@ -11,32 +11,37 @@
     color: #810000;
     border: 2px solid #810000;
     border-radius: 0.2em;
+    /* completo inicialmente */
     padding: 10px 20px;
     cursor: pointer;
     position: relative;
+    transition: all 0.3s;
     width: 7.5em;
     height: 1.3em;
-    z-index: 1000;
-    transition: background 0.3s, color 0.3s, border-radius 0.2s;
+}
+
+/* Cuando el dropdown está activo, solo top-left y top-right */
+.dropdown-temporadas.active #season-btn {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 /* Flecha del botón */
 #season-btn::after {
     content: "▼";
     position: absolute;
-    right: 16px;
+    right: 10px;
     top: 50%;
     transform: translateY(-50%);
     transition: transform 0.3s;
     font-size: 25px;
 }
 
-#season-btn:hover {
-    color: #181818;
-    background: #f00;
+.dropdown-temporadas.active #season-btn::after {
+    transform: translateY(-50%) rotate(180deg);
 }
 
-/* Contenedor de opciones tipo reveal */
+/* Contenedor de opciones */
 .season-options {
     position: absolute;
     top: 100%;
@@ -44,17 +49,23 @@
     background: #181818;
     border: 2px solid #810000;
     border-top: none;
+    /* no doble borde con el botón */
     border-bottom-left-radius: 0.2em;
     border-bottom-right-radius: 0.2em;
     min-width: 160px;
     color: #f00;
     text-align: center;
     font-weight: 300;
-    overflow: hidden;
-    max-height: 0;
-    /* oculto inicialmente */
-    transition: max-height 0.4s ease;
-    z-index: 999;
+
+    /* Efecto slide */
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s ease;
+}
+
+/* Mostrar opciones al abrir */
+.dropdown-temporadas.active .season-options {
+    transform: scaleY(1);
 }
 
 /* Opciones individuales */
