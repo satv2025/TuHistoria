@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
             // 🚀 Reemplazos según prefijos
             text = text
                 .replace(/\{formatear-titulo\}(.*?)(\r?\n|$)/g, "<h3>$1</h3>")
-                .replace(/\{formatear-subtitulo\}(.*?)(\r?\n|$)/g, "<p style='font-weight: bold'>$1</p>")
+                .replace(/\{formatear-subtitulo\}(.*?)(\r?\n|$)/g, "<p id='subtitulo-uchdt' style='font-weight: bold'>$1</p>")
                 .replace(/\{formatear-texto\}(.*?)(\r?\n|$)/g, "<p>$1</p>")
                 .replace(/\{formatear-pie\}(.*?)(\r?\n|$)/g, "<p style='font-style: italic; color:#555'>$1</p>");
 
