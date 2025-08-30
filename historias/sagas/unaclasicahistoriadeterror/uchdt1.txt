@@ -1,0 +1,67 @@
+{formatear-titulo} TEMPORADA 1
+
+{formatear-titulo} UNA CLÁSICA HISTORIA DE TERROR
+
+{formatear-texto}  A fines de febrero de 2010, en una casa en Villa Luzuriaga, estaban Jimena de 14 años, y sus cuatro amigos, Pablo, Franco, Micaela y Lucía, los cuatro de la misma edad de Jimena. Y decidieron jugar a que uno de ellos era asesino, dos de los cuatros restantes eran policías, y los otros dos eran víctimas. Jugaron por horas y horas y horas hasta el anochecer. Hasta alrededor de las 22hs estuvieron los cinco juntos, hasta las 22:30hs, que se pusieron a buscar a una de las chicas que hacía de víctima, lo buscaron por toda la casa, el que hacía de asesino dijo dónde estaba, pero ella ya no estaba.
+
+{formatear-texto} Cerca de las 15hs del día siguiente los padres deciden hacer la denuncia a la policía para que puedan investigar que pasó.
+
+{formatear-texto} Al cabo de una semana Jimena, Pablo, Franco y Micaela, empezaron a rememorar lo que pasó ese día, y así, llegaron a la conclusión de que {formatear-texto} Franco fue el último en ver a Lucía antes de su desaparición.
+{formatear-texto} Luego de varios meses de investigación, la policía encuentra un baúl en una caseta en un descampado, en dicho baúl se encontró una bolsa negra pesada, muy pesada.
+
+{formatear-texto} Hasta el momento nadie sabe nada de Lucía, la justicia ya no habla de desaparición, sino de homicidio, aunque las familias de los chicos ya no saben qué hacer.
+
+{formatear-texto} {formatear-texto} No es sino hasta enero de 2011, casi un año, que se encuentran tres baúles similares al encontrado en 2010, solo que, en vez de una bolsa negra, había cuatro bolsas negras por baúl. A la semana de hallados los baúles, se comprobó que, en efecto, los tres baúles encontrados y el encontrado a mediados de 2010, contenían cadáveres de niños y mujeres, pero ninguno coincidía con el cuerpo de Lucía.
+
+{formatear-texto} Luego de transcurridos unos once largos años, en febrero de 2022, con el caso ya cerrado, aparecen más pistas, al punto que la policía quedó desconcertada, porque como puede ser que luego de doce años, haya novedades, si ni siquiera se estaba investigando, bueno, eso iba a ser respondido con esta pista. Cerca de la vieja casa de Jimen hacer a, ahora casa de su tía María Anabel, se encontró la remera rosa que Lucía había usado el día de su desaparición.
+
+{formatear-texto} Tras varias pericias, se descubrió que había ADN de tres hombres, de entre 35 y 50 años.
+Tras varios interrogatorios, Jimena ya una mujer de 26 años, reveló doce años después, que su padre y dos personas más los estaban espiando mientras jugaban, y que le pareció raro, porque dijeron que mientras que la madre de Jimena, la madre de Pablo y la madre de Micaela iban al supermercado, el padre de Jimena, el padre de Pablo y el padre de Micaela, iban al banco y a hacer trámites, para más rápido, y acelerar tiempos.
+La policía preguntó que por qué no dijo nada antes, y dijo que fue porque alguien llamó al teléfono de la casa, y ella atendió, y una voz la amenazó.
+
+{formatear-texto} Luego de eso, la policía procedió a arrestar a Demetrio Soldán, Ricardo Lezcano y Gervasio Rodrigo y ponerlos en prisión preventiva en calidad de sospechosos por el secuestro, abuso sexual y asesinato de Lucía Rivadavia en el año 2010, y por el asesinato y desmembramiento de los trece cuerpos encontrados en los baúles en 2010 y 2011.
+
+{formatear-texto} Tras varios meses de investigación y pericias, un chico de 17 años identificado como Agustín Belloso, encontró el calzado y ropa interior de una niña, junto a dos cuchillos de carnicero, y una pistola calibre 50. Dicho hallazgo fue investigado, y se volvieron a encontrar los mismos rastros de ADN de la remerita rosa de Lucía, y oh casualidad, el calzado y la ropa interior, también era de Lucía. A este punto la policía ya empezaba a considerar a Demetrio, Ricardo y Gervasio como perpetradores y autores intelectuales del posible crimen de Lucía.
+
+{formatear-texto} Al día siguiente, Marisa Recalde, la madre de Lucía, reveló, que Demetrio y Ricardo varias veces se quisieron sobrepasar con ella y con su hija, y también, le entregó a la policía una grabación de una cámara de seguridad de su casa, que mostraba como Demetrio hacía chistes obscenos con Marisa y Lucía, y Ricardo miraba y reía diciendo que eran solo chistes.
+
+{formatear-texto} También Fernanda Estévez, denunció a Ricardo Lezcano por intento de secuestro, evitado por dos transeúntes. Dicho acontecimiento, salió en los medios, pero la policía hizo caso omiso.
+
+{formatear-texto} Así varias personas denunciaron a Ricardo Lezcano.
+
+{formatear-texto} Un médico psiquiátrico, afirmó haber atendido a Ricardo cuando tenía 11 años por querer asesinar a su maestra de 6 grado repetidas veces. El médico dijo que la justicia lo quería internar en un Manicomio en Colorado, y no un hospital psiquiátrico que lo trate de forma científica. También, lo quisieron usar como rata de laboratorio, pero los padres se negaron.
+
+{formatear-texto} Aún no se sabe cómo Ricardo logró salir adelante pese a los problemas mentales que enfrentaba cuando era niño, y tampoco se sabe cómo logró tener un trabajo, ya que se conocían sus antecedentes.
+
+{formatear-texto} Tras varios meses de investigación, ocurrió algo inesperado, algo que no tiene explicación. De la nada en la oficina del comisario Norberto Rojas, apareció un VHS, cinta la cual no se usa hace años, ya que no existen o no se venden las videocaseteras o reproductor VHS. Increíblemente, la abuela de Norberto Rojas tenía una videocasetera, y se la dio a Norberto años antes. Tras revisar la cinta, la misma contenía una atroz grabación, del desmembramiento y asesinato de una niña de 11 años. 	El comisario se percató que detrás del criminal, había una foto, dicha foto era una de Marisa Recalde, mujer de la cual el criminal estaba extraña y fuertemente enamorado.
+
+{formatear-texto} Al percatarse de esto, el comisario Norberto mandó a investigar la casa de Demetrio. La policía halló tres VHS, dos packs de bolsas negras como las que encontraron, una cámara, y armas, más precisamente, dos fusiles de asalto Heckler And Koch HK 416 y 10 pistolas, dos Desert Eagle calibre 50, seis Beretta Magnum 357 calibre 9.33mmR y dos Colt 1911/M1911 9mm.
+Los tres VHS contenían más videos de los crímenes de Ricardo y Demetrio.
+
+{formatear-texto} Dados los resultados de esta investigación, la fiscalía de Buenos Aires decidió comenzar el juicio de Demetrio Soldán y Ricardo Lezcano, por trece asesinatos y desmembramientos, y un secuestro con posible homicidio. Luego de varias audiencias y varias querellas, se condenó a Demetrio Soldán y a Ricardo Lezcano a cadena perpetua por trece crímenes y un secuestro con posibilidad de homicidio.
+
+{formatear-texto} Pero claro, Gervasio también era sospechoso, porque se halló su ADN en varias prendas de Lucía, pero la policía no tenía nada por qué incriminarlo, así que fue sobreseído y liberado con prohibición a salir del país.
+
+{formatear-texto} Tiempo después, se investigó la casa de Gervasio, y se encontraron diez cintas VHS más. Las cintas contenían videos de Demetrio y Ricardo obligando a Gervasio a cometer actos necrofílicos con los cadáveres.
+Dado este escandaloso hecho, la justicia decidió desvincular a Gervasio de los trece crímenes y de la desaparición de Lucía, agravando la condena de Demetrio y Ricardo por extorsión y coacción.
+
+{formatear-texto} Tras varios meses, se encontró en una caseta, encerrada y semidesnuda, a punto de ser asesinada a Lucía.
+
+{formatear-texto} Tras ser liberada, Lucía declaró, y contó lo siguiente.
+
+{formatear-texto} Testimonio de Lucía: Estábamos jugando al clásico juego del asesino, y yo era una de las víctimas, y en un momento Jime me dijo: “Vi a mi padre y a dos personas más, vigilarnos” y yo le dije, nah, tranquila, no pasa nada.
+Después cuando Franco me “asesina” me deja en la habitación de Jime, luego, escucho como alguien sale del armario, y sin que yo pueda ver nada, me pone una bolsa en la cabeza, y me duerme. Al despertar, veo a Demetrio y a Ricardo golpeando a Gervasio, para que esconda mi ropa en distintos puntos del país. Demetrio recibe una llamada, la llamada era de la madre de Lucía, y decidieron actuar como si no supieran nada. Después de eso, veo que en el piso me dejaron comida para por lo menos un mes, decidí racionarla, y por eso viví tanto tiempo.
+
+{formatear-texto} Luego del testimonio de Lucía, la policía decide retirarle todos los cargos a Gervasio, y la condena de Demetrio y Ricardo se agravó, por extorsión y secuestro.
+
+{formatear-texto} Alrededor de las 10:30 de la mañana, un chico despierta en lo que él cree que es una jaula, y llama a sus padres y les dice:
+- Chico - Mamá, papá, tuve una pesadilla
+- Madre - ¿Ah sí?, bueno contá
+- Chico - Soñé que unos chicos jugaban al juego de asesino en una casa y una chica desaparecía y la policía encontró armas, VHS, ropa y ADN de tres hombres, y dos de ellos eran condenados a perpetua.
+- Madre - Hijo, ¿estás seguro de que fue un sueño?
+- Chico - Si mamá, ¿Por qué?
+
+
+{formatear-texto} Una clásica historia de terror es un relato de terror ficticio, y nada de lo narrado debe ser tomado como algo real, cualquier similitud con la realidad es pura coincidencia.
+
+{formatear-texto} Este relato fue creado con la idea de que el lector imagine todo en su cabeza, y reviva los clásicos del terror.
