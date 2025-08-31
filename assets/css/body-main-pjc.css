@@ -131,7 +131,7 @@ nav li:hover>a {
 /* ====== CARD ====== */
 .card {
     background: #181818;
-    border-radius: 12px;
+    border-radius: 6px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
