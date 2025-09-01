@@ -2,20 +2,19 @@ const dropdown = document.querySelector('.dropdown-temporadas');
 const btn = document.getElementById('season-btn');
 
 let openTimeout = null;
+let isOpen = false; // estado manual
 
 btn.addEventListener('click', (e) => {
     e.stopPropagation();
 
     // Si está abierto o en pre-apertura, cerramos inmediatamente
-    if (dropdown.classList.contains('active') || dropdown.classList.contains('pre-open')) {
-        // Cancelar timeout si existe
+    if (isOpen || dropdown.classList.contains('pre-open')) {
         if (openTimeout) {
             clearTimeout(openTimeout);
             openTimeout = null;
         }
-
-        // Quitar clases
         dropdown.classList.remove('active', 'pre-open');
+        isOpen = false;
         return;
     }
 
@@ -26,6 +25,7 @@ btn.addEventListener('click', (e) => {
     openTimeout = setTimeout(() => {
         dropdown.classList.add('active');
         dropdown.classList.remove('pre-open');
+        isOpen = true;
         openTimeout = null;
     }, 4000);
 });
@@ -37,4 +37,5 @@ document.addEventListener('click', () => {
         openTimeout = null;
     }
     dropdown.classList.remove('active', 'pre-open');
+    isOpen = false;
 });
