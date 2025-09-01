@@ -321,7 +321,7 @@ p {
     top: 50%;
     transform: translateY(-50%);
     transition: transform 0.3s;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .dropdown-temporadas.active #season-btn::after {
