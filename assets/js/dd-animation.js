@@ -2,30 +2,27 @@ const dropdown = document.querySelector('.dropdown-temporadas');
 const btn = document.getElementById('season-btn');
 
 let openTimeout = null;
-let isOpen = false; // estado manual
 
 btn.addEventListener('click', (e) => {
     e.stopPropagation();
 
-    // Si está abierto o en pre-apertura, cerramos inmediatamente
-    if (isOpen || dropdown.classList.contains('pre-open')) {
+    // Si ya está abierto o en pre-apertura, cerramos
+    if (dropdown.classList.contains('active') || dropdown.classList.contains('pre-open')) {
         if (openTimeout) {
             clearTimeout(openTimeout);
             openTimeout = null;
         }
         dropdown.classList.remove('active', 'pre-open');
-        isOpen = false;
         return;
     }
 
-    // Aplicar borde primero
+    // Abrimos en pre-apertura
     dropdown.classList.add('pre-open');
 
-    // Después de 4 segundos, abrir dropdown
+    // Esperar 4 segundos para abrir
     openTimeout = setTimeout(() => {
         dropdown.classList.add('active');
         dropdown.classList.remove('pre-open');
-        isOpen = true;
         openTimeout = null;
     }, 4000);
 });
@@ -37,5 +34,4 @@ document.addEventListener('click', () => {
         openTimeout = null;
     }
     dropdown.classList.remove('active', 'pre-open');
-    isOpen = false;
 });
