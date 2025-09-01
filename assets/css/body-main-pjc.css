@@ -17,6 +17,11 @@ p {
     line-height: 1.2;
 }
 
+#saga-season-count {
+    position: absolute;
+    margin-top: -2em;
+}
+
 body {
     font-family: "Netflix Sans", sans-serif;
     background: #010101;
