@@ -295,6 +295,7 @@ p {
     display: inline-block;
     font-weight: 700;
     margin: 1em auto 0;
+    left: -1em;
 }
 
 #season-btn {
