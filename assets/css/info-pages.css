@@ -18,12 +18,111 @@ body {
     text-align: center;
 }
 
-/* ====== HEADER ====== */
+/* HEADER BASE */
 header {
     background: #010101;
     border-bottom: 2px solid #810000;
-    padding: 15px;
+    padding: 15px 2%;
     color: #810000;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* NAVEGACIÓN FLEXIBLE MULTIFILA */
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    /* permite varias filas */
+    justify-content: center;
+    /* centra horizontalmente */
+    gap: 15px;
+    /* separación entre links */
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    position: relative;
+    /* para dropdown */
+    min-width: 120px;
+    /* asegura que cada item tenga un ancho mínimo */
+    text-align: center;
+}
+
+header nav ul li a {
+    color: #810000;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 10px;
+    display: block;
+}
+
+/* DROPDOWN */
+header nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #181818;
+    border: 1px solid #810000;
+    border-radius: 4px;
+    min-width: 120px;
+    z-index: 100;
+    text-align: left;
+}
+
+header nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+header nav ul li .dropdown-content a {
+    padding: 8px 12px;
+    color: #f00;
+}
+
+header nav ul li .dropdown-content a:hover {
+    background: #810000;
+    color: #181818;
+}
+
+/* RESPONSIVE HEADER */
+@media (max-width: 1024px) {
+    header nav ul {
+        gap: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        justify-content: center;
+        /* sigue centrado */
+        gap: 10px;
+    }
+
+    header nav ul li {
+        min-width: 100px;
+        /* menos ancho por fila */
+    }
+
+    header nav ul li .dropdown-content {
+        position: static;
+        /* dropdown se despliega debajo del link */
+        width: 100%;
+        border: none;
+        background: #181818;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px 5%;
+    }
+
+    header nav ul li a {
+        font-size: 14px;
+        padding: 4px 6px;
+    }
 }
 
 /* ====== DESTACADAS ====== */
