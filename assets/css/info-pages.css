@@ -306,7 +306,7 @@ p {
     cursor: pointer;
     position: relative;
     transition: all 0.3s;
-    min-width: 119%;
+    min-width: 112%;
 }
 
 .dropdown-temporadas.active #season-btn {
@@ -318,10 +318,10 @@ p {
     content: "▼";
     position: absolute;
     right: 10px;
-    top: 50%;
+    top: 51%;
     transform: translateY(-50%);
     transition: transform 0.3s;
-    font-size: 18px;
+    font-size: 25px;
 }
 
 .dropdown-temporadas.active #season-btn::after {
