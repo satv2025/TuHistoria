@@ -1,46 +1,27 @@
 const dropdown = document.querySelector('.dropdown-temporadas');
 const btn = document.getElementById('season-btn');
 
-let isOpen = false; // Estado del dropdown
-let preOpenTimeout = null;
+let isOpen = false;
 
+// Manejo del clic en el botón
 btn.addEventListener('click', (e) => {
-    e.stopPropagation();
+    e.stopPropagation(); // Evita que el click llegue a document
 
     if (isOpen) {
-        // Si está abierto, cerrar inmediatamente
-        dropdown.classList.remove('active', 'pre-open');
+        // Si está abierto, cerrar
+        dropdown.classList.remove('active');
         isOpen = false;
-
-        // Limpiar cualquier timeout pendiente
-        if (preOpenTimeout) {
-            clearTimeout(preOpenTimeout);
-            preOpenTimeout = null;
-        }
-        return;
-    }
-
-    // Si está cerrado, iniciar pre-apertura
-    dropdown.classList.add('pre-open');
-
-    // Abrir después de 4 segundos
-    preOpenTimeout = setTimeout(() => {
+    } else {
+        // Si está cerrado, abrir
         dropdown.classList.add('active');
-        dropdown.classList.remove('pre-open');
         isOpen = true;
-        preOpenTimeout = null;
-    }, 4000);
+    }
 });
 
-// Cerrar al hacer click fuera
+// Cerrar si se hace clic fuera
 document.addEventListener('click', (e) => {
     if (!dropdown.contains(e.target) && e.target !== btn) {
-        dropdown.classList.remove('active', 'pre-open');
+        dropdown.classList.remove('active');
         isOpen = false;
-
-        if (preOpenTimeout) {
-            clearTimeout(preOpenTimeout);
-            preOpenTimeout = null;
-        }
     }
 });
