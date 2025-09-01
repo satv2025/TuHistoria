@@ -1,44 +1,46 @@
 const dropdown = document.querySelector('.dropdown-temporadas');
 const btn = document.getElementById('season-btn');
 
-let openTimeout = null;
-let isOpen = false;
+let isOpen = false; // Estado del dropdown
+let preOpenTimeout = null;
 
 btn.addEventListener('click', (e) => {
     e.stopPropagation();
 
-    // Si ya está abierto o en pre-apertura, cerramos
-    if (isOpen || dropdown.classList.contains('pre-open')) {
-        if (openTimeout) {
-            clearTimeout(openTimeout);
-            openTimeout = null;
-        }
+    if (isOpen) {
+        // Si está abierto, cerrar inmediatamente
         dropdown.classList.remove('active', 'pre-open');
         isOpen = false;
+
+        // Limpiar cualquier timeout pendiente
+        if (preOpenTimeout) {
+            clearTimeout(preOpenTimeout);
+            preOpenTimeout = null;
+        }
         return;
     }
 
-    // Pre-apertura
+    // Si está cerrado, iniciar pre-apertura
     dropdown.classList.add('pre-open');
 
-    // Después de 4 segundos, abrir
-    openTimeout = setTimeout(() => {
+    // Abrir después de 4 segundos
+    preOpenTimeout = setTimeout(() => {
         dropdown.classList.add('active');
         dropdown.classList.remove('pre-open');
         isOpen = true;
-        openTimeout = null;
+        preOpenTimeout = null;
     }, 4000);
 });
 
-// Cerrar dropdown si haces click fuera
+// Cerrar al hacer click fuera
 document.addEventListener('click', (e) => {
-    // Si el click no es dentro del dropdown ni del botón
     if (!dropdown.contains(e.target) && e.target !== btn) {
-        if (openTimeout) {
-            clearTimeout(openTimeout);
-            openTimeout = null;
-        }
         dropdown.classList.remove('active', 'pre-open');
         isOpen = false;
+
+        if (preOpenTimeout) {
+            clearTimeout(preOpenTimeout);
+            preOpenTimeout = null;
+        }
     }
 });
