@@ -1,3 +1,5 @@
+@import url('https://fuentes.solargentinotv.com.ar/netflixsans.css');
+
 /* ====== SELECCIÓN ====== */
 ::selection {
     background-color: #810000;
@@ -304,7 +306,7 @@ p {
     cursor: pointer;
     position: relative;
     transition: all 0.3s;
-    min-width: 120px;
+    min-width: 119%;
 }
 
 .dropdown-temporadas.active #season-btn {
