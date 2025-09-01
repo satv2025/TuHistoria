@@ -6,11 +6,16 @@ let openTimeout = null;
 btn.addEventListener('click', (e) => {
     e.stopPropagation();
 
-    // Si ya está abierto o en pre-open, cerramos inmediatamente
+    // Si está abierto o en pre-apertura, cerramos inmediatamente
     if (dropdown.classList.contains('active') || dropdown.classList.contains('pre-open')) {
-        clearTimeout(openTimeout);
-        dropdown.classList.remove('active');
-        dropdown.classList.remove('pre-open');
+        // Cancelar timeout si existe
+        if (openTimeout) {
+            clearTimeout(openTimeout);
+            openTimeout = null;
+        }
+
+        // Quitar clases
+        dropdown.classList.remove('active', 'pre-open');
         return;
     }
 
@@ -21,13 +26,15 @@ btn.addEventListener('click', (e) => {
     openTimeout = setTimeout(() => {
         dropdown.classList.add('active');
         dropdown.classList.remove('pre-open');
-        openTimeout = null; // Limpiar referencia
+        openTimeout = null;
     }, 4000);
 });
 
 // Cerrar dropdown al hacer click fuera
 document.addEventListener('click', () => {
-    clearTimeout(openTimeout);
-    dropdown.classList.remove('active');
-    dropdown.classList.remove('pre-open');
+    if (openTimeout) {
+        clearTimeout(openTimeout);
+        openTimeout = null;
+    }
+    dropdown.classList.remove('active', 'pre-open');
 });
