@@ -4,15 +4,21 @@ document.addEventListener("DOMContentLoaded", () => {
     const options = dropdown.querySelectorAll('.season-option');
     const container = document.getElementById("historia");
 
+    // Obtiene la saga desde la URL
+    const pathParts = window.location.pathname.split('/');
+    const saga = pathParts.includes('sagas') ? pathParts[pathParts.indexOf('sagas') + 1] : '';
+
     async function loadSeason(num) {
-        const file = `uchdt${num}.txt`;
+        // Ruta absoluta al archivo .txt
+        const file = `/historias/sagas/${saga}/uchdt${num}.txt`;
+
         try {
             const response = await fetch(file);
             if (!response.ok) throw new Error("No se pudo cargar el archivo");
 
             let text = await response.text();
 
-            // 🚀 Formateo por bloques: toma todo hasta el próximo prefijo o final
+            // Formateo por bloques
             text = text
                 .replace(/\{formatear-titulo\}([\s\S]*?)(?=\{formatear-|$)/g, "<h3 style='text-align: center'>$1</h3>")
                 .replace(/\{formatear-subtitulo\}([\s\S]*?)(?=\{formatear-|$)/g, "<p id='subtitulo-uchdt' style='font-weight: 500'>$1</p>")
