@@ -318,7 +318,7 @@ p {
 #season-btn::after {
     content: "▼";
     position: absolute;
-    right: 10px;
+    right: 15px;
     top: 51%;
     transform: translateY(-50%);
     transition: transform 0.3s;
