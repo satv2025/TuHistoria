@@ -1,12 +1,15 @@
 @import url("https://fuentes.solargentinotv.com.ar/netflixsans.css");
 
+/* ====== SELECCIÓN ====== */
 ::selection {
     background-color: #810000;
-    color: #fff
+    color: #fff;
 }
 
+/* ====== FUENTES ====== */
 * {
     font-family: 'Netflix Sans';
+    box-sizing: border-box;
 }
 
 /* ====== BODY ====== */
@@ -14,6 +17,7 @@ body {
     margin: 0;
     background: #010101;
     color: #000;
+    text-align: center;
 }
 
 /* ====== HEADER ====== */
@@ -21,35 +25,33 @@ header {
     background: #010101;
     border-bottom: 2px solid #810000;
     padding: 15px;
-    text-align: center;
     color: #810000;
 }
 
 /* ====== DESTACADAS ====== */
 .destacadas {
     padding: 40px 20px;
-    background: #010101;
 }
 
 .destacadas h2 {
-    text-align: center;
     font-size: 28px;
     margin-bottom: 30px;
 }
 
-/* Contenedor cards para margen lateral */
+/* ====== CONTENEDOR CARDS ====== */
 .cards-container {
     max-width: 800px;
     margin: 0 auto;
     padding: 0 60px;
 }
 
-/* GRID DE CARDS */
+/* ====== GRID DE CARDS ====== */
 .cards,
 .cards-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 25px;
+    justify-content: center;
 }
 
 .cards-grid {
@@ -57,7 +59,7 @@ header {
 }
 
 #boldis {
-    color: #fff
+    color: #fff;
 }
 
 .card {
@@ -68,11 +70,11 @@ header {
     flex-direction: column;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
     position: relative;
-    width: 107%;
+    width: 120%;
 }
 
 .card img {
-    width: 110%;
+    width: 100%;
     aspect-ratio: 16/9;
     object-fit: cover;
 }
@@ -82,6 +84,7 @@ header {
     display: flex;
     flex-direction: column;
     padding: 25px 45px;
+    text-align: center;
 }
 
 .card h3 {
@@ -130,12 +133,13 @@ h6 {
     border-radius: 6px;
 }
 
-/* FORMULARIO PUBLICAR */
+/* ====== FORMULARIO ====== */
 form {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    margin-top: 20px;
+    margin: 20px auto;
+    max-width: 600px;
 }
 
 form label {
@@ -153,6 +157,7 @@ form textarea {
     font-size: 14px;
     outline: none;
     resize: vertical;
+    width: 100%;
 }
 
 form input:focus,
@@ -161,12 +166,13 @@ form textarea:focus {
     border-color: #f00;
 }
 
-/* CONTACTO */
+/* ====== CONTACTO ====== */
 .contact-info {
     max-width: 700px;
     margin: 0 auto;
     padding: 20px;
     font-size: 16px;
+    text-align: center;
 }
 
 .contact-info p,
@@ -182,4 +188,234 @@ form textarea:focus {
 p {
     line-height: 1.6;
     text-align: justify;
+}
+
+/* ====== DROPDOWN TEMPORADAS ====== */
+.dropdown-temporadas {
+    position: absolute;
+    font-weight: 700;
+    margin-left: 42em;
+    /* desktop intacto */
+    margin-top: 1.2em;
+}
+
+#season-btn {
+    background: #181818;
+    color: #810000;
+    border: 2px solid #810000;
+    border-radius: 0.2em;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s;
+    width: 10em;
+    height: 2.6em;
+    margin-left: -4em;
+}
+
+.dropdown-temporadas.active #season-btn {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#season-btn::after {
+    content: "▼";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s;
+    font-size: 25px;
+}
+
+.dropdown-temporadas.active #season-btn::after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.season-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #181818;
+    border: 2px solid #810000;
+    border-top: none;
+    border-bottom-left-radius: 0.2em;
+    border-bottom-right-radius: 0.2em;
+    min-width: 160px;
+    color: #f00;
+    text-align: center;
+    font-weight: 300;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s ease;
+    z-index: 10;
+}
+
+.dropdown-temporadas.active .season-options {
+    transform: scaleY(1);
+}
+
+.season-option {
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.season-option:hover {
+    background: #810000;
+    color: #181818;
+}
+
+/* ====== RESPONSIVE ====== */
+
+/* Tablets grandes */
+@media (max-width: 1024px) {
+
+    .cards,
+    .cards-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .card-content {
+        padding: 20px 25px;
+    }
+
+    .destacadas h2 {
+        font-size: 24px;
+    }
+
+    .card h3 {
+        font-size: 20px;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+
+    /* Dropdown se centra */
+    .dropdown-temporadas {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #season-btn {
+        width: 7em;
+        height: 1.2em;
+        font-size: 14px;
+    }
+
+    #season-btn::after {
+        font-size: 20px;
+    }
+}
+
+/* Tablets verticales / móviles medianos */
+@media (max-width: 768px) {
+
+    .cards,
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .card-content {
+        padding: 15px 20px;
+    }
+
+    .destacadas h2 {
+        font-size: 22px;
+    }
+
+    .card h3 {
+        font-size: 18px;
+    }
+
+    .card p {
+        font-size: 13px;
+    }
+
+    .dropdown-temporadas {
+        position: static;
+        margin: 1em auto 0;
+        width: fit-content;
+    }
+
+    #season-btn {
+        width: 80%;
+        max-width: 200px;
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .season-options {
+        position: static;
+        transform: scaleY(1);
+        border-top: 2px solid #810000;
+        margin-top: 0.2em;
+    }
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+
+    .cards,
+    .cards-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .card-content {
+        padding: 10px 15px;
+    }
+
+    .destacadas h2 {
+        font-size: 20px;
+    }
+
+    .card h3 {
+        font-size: 16px;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+
+    header {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    form input,
+    form select,
+    form textarea {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .dropdown-temporadas {
+        width: 90%;
+        margin: 0.5em auto;
+    }
+
+    #season-btn {
+        width: 90%;
+        max-width: 180px;
+        font-size: 13px;
+        padding: 6px 10px;
+    }
+
+    #season-btn::after {
+        font-size: 18px;
+    }
+
+    .season-options {
+        width: 90%;
+        margin: 0.2em auto;
+    }
+
+    .season-option {
+        padding: 8px;
+        font-size: 12px;
+    }
 }
