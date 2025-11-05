@@ -478,3 +478,27 @@ p {
         min-width: 199px !important;
     }
 }
+
+/* WebKit (Chrome, Edge, Safari, Opera) */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #141414;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f00;
+
+}
+
+/* Firefox solamente */
+@supports (-moz-appearance:none) {
+
+    html,
+    body {
+        scrollbar-width: thin;
+        scrollbar-color: #f00 #141414;
+    }
+}
