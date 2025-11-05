@@ -58,25 +58,24 @@ document.addEventListener('DOMContentLoaded', () => {
       width: 8px;
     }
     #page-scroll::-webkit-scrollbar-track {
-      background: #000;
+      background: #141414;
     }
     #page-scroll::-webkit-scrollbar-thumb {
       background: #f00;
-      border-radius: 4px;
     }
 
     /* Firefox – detectar Firefox */
     @supports (-moz-appearance:none) {
       #page-scroll {
         scrollbar-width: thin;
-        scrollbar-color: #f00 #000;
+        scrollbar-color: #f00 #141414;
       }
     }
 
     @-moz-document url-prefix() {
       #page-scroll {
         scrollbar-width: thin;
-        scrollbar-color: #f00 #000;
+        scrollbar-color: #f00 #141414;
       }
     }
   `;
