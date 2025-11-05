@@ -466,3 +466,15 @@ p {
         min-width: 100%;
     }
 }
+
+@supports (-moz-appearance:none) {
+    .season-options {
+        min-width: 199px !important;
+    }
+}
+
+@-moz-document url-prefix() {
+    .season-options {
+        min-width: 199px !important;
+    }
+}
