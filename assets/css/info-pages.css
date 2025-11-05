@@ -1,480 +1,208 @@
 @import url('https://solargentinotv.com.ar/assets/fonts/NetflixSans/netflixsans.css');
 
-/* ====== SELECCIÓN ====== */
+/* ====== GLOBAL ====== */
 ::selection {
     background-color: #810000;
     color: #fff;
 }
 
-/* ====== FUENTES ====== */
 * {
-    font-family: 'Netflix Sans';
     box-sizing: border-box;
-}
-
-/* ====== BODY ====== */
-body {
-    margin: 0;
-    background: #010101;
-    color: #000;
-    text-align: center;
-}
-
-/* HEADER BASE */
-header {
-    background: #010101;
-    border-bottom: 2px solid #810000;
-    padding: 15px 2%;
-    color: #810000;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-/* NAVEGACIÓN FLEXIBLE MULTIFILA */
-header nav ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    /* permite varias filas */
-    justify-content: center;
-    /* centra horizontalmente */
-    gap: 15px;
-    /* separación entre links */
     margin: 0;
     padding: 0;
 }
 
-header nav ul li {
-    position: relative;
-    /* para dropdown */
-    min-width: 120px;
-    /* asegura que cada item tenga un ancho mínimo */
-    text-align: center;
-}
-
-header nav ul li a {
-    color: #810000;
-    text-decoration: none;
-    font-weight: 500;
-    padding: 5px 10px;
-    display: block;
-}
-
-/* DROPDOWN */
-header nav ul li .dropdown-content {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: #181818;
-    border: 1px solid #810000;
-    border-radius: 4px;
-    min-width: 120px;
-    z-index: 100;
+p {
+    margin-bottom: 0.5em;
+    line-height: 1.2;
+    padding-left: 1em;
+    padding-right: 1em;
     text-align: left;
+    padding-bottom: 0.3em;
 }
 
-header nav ul li:hover .dropdown-content {
-    display: block;
+#saga-season-count {
+    position: absolute;
+    margin-top: -2em;
 }
 
-header nav ul li .dropdown-content a {
+body {
+    font-family: "Netflix Sans", sans-serif;
+    background: #010101;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ====== HEADER ====== */
+header {
+    width: 100%;
+    background: #010101;
+    border-bottom: 1px solid #810000;
+    padding: 15px 0;
+    text-align: center;
+    color: #810000;
+}
+
+/* ====== NAV ====== */
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    font-weight: 700;
+}
+
+nav a {
+    text-decoration: none;
+    color: #810000;
     padding: 8px 12px;
-    color: #f00;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s;
+    font-weight: 700;
 }
 
-header nav ul li .dropdown-content a:hover {
-    background: #810000;
-    color: #181818;
-}
-
-/* RESPONSIVE HEADER */
-@media (max-width: 1024px) {
-    header nav ul {
-        gap: 12px;
-    }
-}
-
-@media (max-width: 768px) {
-    header nav ul {
-        justify-content: center;
-        /* sigue centrado */
-        gap: 10px;
-    }
-
-    header nav ul li {
-        min-width: 100px;
-        /* menos ancho por fila */
-    }
-
-    header nav ul li .dropdown-content {
-        position: static;
-        /* dropdown se despliega debajo del link */
-        width: 100%;
-        border: none;
-        background: #181818;
-    }
-}
-
-@media (max-width: 480px) {
-    header {
-        padding: 10px 5%;
-    }
-
-    header nav ul li a {
-        font-size: 14px;
-        padding: 4px 6px;
-    }
+nav a:hover,
+nav li:hover>a {
+    color: #fff;
+    border-bottom-color: #810000;
 }
 
 /* ====== DESTACADAS ====== */
 .destacadas {
     padding: 40px 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .destacadas h2 {
+    text-align: center;
     font-size: 28px;
     margin-bottom: 30px;
 }
 
-/* ====== CONTENEDOR CARDS ====== */
+/* Contenedor de cards centrado */
 .cards-container {
-    max-width: 800px;
-    margin: 0 auto;
+    width: 100%;
+    max-width: 1400px;
     padding: 0 20px;
 }
 
-/* ====== GRID DE CARDS ====== */
+/* ====== GRID CARDS ====== */
 .cards,
 .cards-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 25px;
-    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding-left: 2em;
+    padding-right: 3em;
 }
 
-.cards-grid {
-    margin: 0 auto;
+/* Responsive con mismo margen lateral */
+@media (min-width: 1200px) {
+
+    .cards,
+    .cards-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
 }
 
-#boldis {
-    color: #fff;
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .cards,
+    .cards-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .cards,
+    .cards-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    .cards,
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 575px) {
+
+    .cards,
+    .cards-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
 }
 
 .card {
-    background: #fff;
+    background: #181818;
     border-radius: 6px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-    position: relative;
     width: 100%;
-}
-
-.card img {
-    width: 100%;
-    aspect-ratio: 16/9;
-    object-fit: cover;
-}
-
-.card-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    text-align: center;
-}
-
-.card h3 {
-    margin: 0 0 10px;
-    font-size: 24px;
-    color: #000;
-}
-
-.card p {
-    flex: 1;
-    font-size: 16px;
-    color: #000;
-    margin: 0 0 10px;
-    font-weight: 300;
-}
-
-p#subtitulo-uchdt {
-    margin-top: 1.1em;
-    margin-bottom: -0.2em;
-}
-
-li {
-    font-weight: 300;
-}
-
-strong,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: 500;
-}
-
-/* TAG DESTACADO */
-.tag-prox {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background: crimson;
-    color: #fff;
-    font-weight: bold;
-    padding: 6px 12px;
-    font-size: 13px;
-    border-radius: 6px;
-}
-
-/* ====== FORMULARIO ====== */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin: 20px auto;
-    max-width: 600px;
-}
-
-form label {
-    font-weight: 700;
-}
-
-form input,
-form select,
-form textarea {
-    padding: 10px;
-    border-radius: 6px;
-    border: 2px solid #810000;
-    background: #181818;
-    color: #000;
-    font-size: 14px;
-    outline: none;
-    resize: vertical;
-    width: 100%;
-}
-
-form input:focus,
-form select:focus,
-form textarea:focus {
-    border-color: #f00;
-}
-
-/* ====== CONTACTO ====== */
-.contact-info {
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 20px;
-    font-size: 16px;
-    text-align: center;
-}
-
-.contact-info p,
-.contact-info a {
-    color: #000;
-    text-decoration: none;
-}
-
-.contact-info a:hover {
-    color: #810000;
-}
-
-p {
-    line-height: 1.6;
-    text-align: justify;
-}
-
-/* ====== DROPDOWN TEMPORADAS ====== */
-.dropdown-temporadas {
-    position: relative;
-    display: inline-block;
-    font-weight: 700;
-    margin: 1em auto 0;
-    left: -1em;
-}
-
-#season-btn {
-    background: #181818;
-    color: #810000;
-    border: 2px solid #810000;
-    border-radius: 0.2em;
-    padding: 10px 20px;
-    cursor: pointer;
-    position: relative;
-    transition: all 0.3s;
-    min-width: 139%;
-}
-
-.dropdown-temporadas.active #season-btn {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-}
-
-#season-btn::after {
-    content: "▼";
-    position: absolute;
-    right: 15px;
-    top: 51%;
-    transform: translateY(-50%);
-    transition: transform 0.3s;
-    font-size: 25px;
-}
-
-.dropdown-temporadas.active #season-btn::after {
-    transform: translateY(-50%) rotate(180deg);
-}
-
-.season-options {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: #181818;
-    border: 2px solid #810000;
-    border-top: none;
-    border-bottom-left-radius: 0.2em;
-    border-bottom-right-radius: 0.2em;
-    min-width: 198px;
-    color: #f00;
-    text-align: center;
-    font-weight: 300;
-    transform: scaleY(0);
-    transform-origin: top;
     transition: transform 0.3s ease;
-    z-index: 10;
+    text-decoration: none;
+    color: inherit;
 }
 
-.dropdown-temporadas.active .season-options {
-    transform: scaleY(1);
-}
-
-.season-option {
-    padding: 10px;
+.card:hover {
     cursor: pointer;
-    transition: all 0.3s;
+    z-index: 1000;
+    outline: 3px solid #fff;
 }
 
-.season-option:hover {
-    background: #810000;
-    color: #181818;
+/* Contenedor de imagen + título */
+.card .img-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
 }
 
-/* ====== RESPONSIVE 100% ====== */
-
-/* Tables grandes y medianas */
-@media (max-width: 1024px) {
-    .cards-container {
-        padding: 0 15px;
-    }
-
-    .card-content {
-        padding: 15px;
-    }
-
-    .destacadas h2 {
-        font-size: 24px;
-    }
-
-    .card h3 {
-        font-size: 20px;
-    }
-
-    .card p {
-        font-size: 14px;
-    }
+/* Fondo de la card */
+.card .img {
+    width: 100%;
+    height: 100%;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    color: #fff;
 }
 
-/* Tablets verticales */
-@media (max-width: 768px) {
-
-    .cards,
-    .cards-grid {
-        gap: 15px;
-    }
-
-    .card-content {
-        padding: 10px;
-    }
-
-    .destacadas h2 {
-        font-size: 22px;
-    }
-
-    .card h3 {
-        font-size: 18px;
-    }
-
-    .card p {
-        font-size: 13px;
-    }
-
-    #season-btn {
-        width: 100%;
-    }
-
-    .season-options {
-        min-width: 100%;
-    }
+/* Título encima */
+.card .img2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(0deg, #181818, transparent 50%);
+    font-size: 1.8rem;
+    color: #fff;
+    pointer-events: none;
+    /* para que no bloquee clicks */
 }
 
-/* Móviles pequeños */
-@media (max-width: 480px) {
-
-    .cards,
-    .cards-grid {
-        gap: 10px;
-    }
-
-    .card-content {
-        padding: 8px;
-    }
-
-    .destacadas h2 {
-        font-size: 20px;
-    }
-
-    .card h3 {
-        font-size: 16px;
-    }
-
-    .card p {
-        font-size: 12px;
-    }
-
-    header {
-        font-size: 14px;
-        padding: 10px;
-    }
-
-    form input,
-    form select,
-    form textarea {
-        font-size: 12px;
-        padding: 6px;
-    }
-
-    #season-btn {
-        font-size: 13px;
-        padding: 6px 10px;
-    }
-
-    .season-options {
-        min-width: 100%;
-    }
-}
-
-@supports (-moz-appearance:none) {
-    .season-options {
-        min-width: 199px !important;
-    }
-}
-
-@-moz-document url-prefix() {
-    .season-options {
-        min-width: 199px !important;
-    }
+/* Contenido debajo de la imagen */
+.card .card-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
 }
